@@ -1,0 +1,34 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+<form action="choose-type" method="get" class="form">
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+<a href="#" class="govuk-back-link">Back</a>
+<h1 class="govuk-heading-l">Choose your team</h1>
+
+<div class="govuk-form-group">
+  <label class="govuk-label" for="national-insurance-number">
+    Access data and best practice and citizens engagement tagged for your team
+  </label>
+  <span id="national-insurance-number-hint" class="govuk-hint">
+    This will have been set up when you started the project
+  </span>
+    <input class="govuk-input govuk-!-width-one-half" id="one-half" name="one-half" type="text">
+  </div>
+
+<button type="submit" class="govuk-button">
+  Continue
+</button>
+</br>
+<a href="" style="font-size: 20px;">Create team to start</a>
+    </div>
+</div>
+</form>
+{% endblock %}
