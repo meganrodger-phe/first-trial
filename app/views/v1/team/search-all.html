@@ -7,11 +7,11 @@
 
 {% block content %}
 
-<form action="search-all" method="get" class="form">
+<form action="" method="get" class="form">
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-two-thirds">
 <a href="#" class="govuk-back-link">Back</a>
-<h1 class="govuk-heading-l">Best practice and citizen engagement tagged by team</h1>
+<h1 class="govuk-heading-l">Search all best practice</h1>
 
 <div class="govuk-form-group">
   <fieldset class="govuk-fieldset" aria-describedby="sign-in-hint">
@@ -25,20 +25,20 @@
     </span>!-->
     <div class="govuk-radios">
       <div class="govuk-radios__item">
-        <input class="govuk-radios__input" id="tagged_bp" name="which_practice" type="radio" value="tagged_bp" aria-describedby="what-1-item-hint">
-        <label class="govuk-label govuk-radios__label " for="tagged_bp">
+        <input class="govuk-radios__input" id="view_by_how" name="view-by" type="radio" value="view_by_how" aria-describedby="what-1-item-hint">
+        <label class="govuk-label govuk-radios__label" for="view_by_how">
           Tagged best practice and guidelines
         </label>
       </div>
       <div class="govuk-radios__item">
-        <input class="govuk-radios__input" id="uploaded_ce" name="which_practice" type="radio" value="uploaded_ce" aria-describedby="what-2-item-hint">
-        <label class="govuk-label govuk-radios__label " for="uploaded_ce">
+        <input class="govuk-radios__input" id="view_by_what" name="view-by" type="radio" value="view_by_what" aria-describedby="what-2-item-hint">
+        <label class="govuk-label govuk-radios__label" for="view_by_what">
         Uploaded citizen engagement
         </label>
       </div>
       <div class="govuk-radios__item">
-        <input class="govuk-radios__input" id="search_all" name="which_practice" type="radio" value="search_all" aria-describedby="what-3-item-hint">
-        <label class="govuk-label govuk-radios__label " for="search_all">
+        <input class="govuk-radios__input" id="view_by_need" name="view-by" type="radio" value="view_by_need" aria-describedby="what-3-item-hint">
+        <label class="govuk-label govuk-radios__label" for="view_by_need">
           Search all best practice
         </label>
       </div>

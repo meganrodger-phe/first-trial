@@ -1,0 +1,52 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+<form action="" method="get" class="form">
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+<a href="#" class="govuk-back-link">Back</a>
+<h1 class="govuk-heading-l">Citizen engagement uploaded by your team members for --- project</h1>
+</div>
+  <div class="govuk-grid-column-full">
+<table class="govuk-table">
+  <caption class="govuk-table__caption">Uploaded information</caption>
+  <thead class="govuk-table__head">
+    <tr class="govuk-table__row">
+      <th class="govuk-table__header" scope="col">
+      Title of uploaded information</th>
+      <th class="govuk-table__header" scope="col">Information type</th>
+      <th class="govuk-table__header" scope="col">Team summary</th>
+      <th class="govuk-table__header" scope="col">Tags</th>
+    </tr>
+  </thead>
+  <tbody class="govuk-table__body">
+    <tr class="govuk-table__row">
+      <th class="govuk-table__header" scope="row"><a href="paper-example">Blog about ...</a></th>
+      <td class="govuk-table__cell">link</td>
+      <td class="govuk-table__cell">This would be useful for .....</td>
+      <td class="govuk-table__cell">Good for financial impact</td>
+    </tr>
+    <tr class="govuk-table__row">
+      <th class="govuk-table__header" scope="row"><a href="">Document</a></th>
+      <td class="govuk-table__cell">word doc</td>
+      <td class="govuk-table__cell">This is about...</td>
+      <td class="govuk-table__cell">Good for people impact, Good for prevention</td>
+    </tr>
+    <tr class="govuk-table__row">
+      <th class="govuk-table__header" scope="row"><a href="">Article about ...</a></th>
+      <td class="govuk-table__cell">link to article</td>
+      <td class="govuk-table__cell">This was used successfully for something</td>
+      <td class="govuk-table__cell">Good for treatment, Good for something else</td>
+    </tr>
+  </tbody>
+</table>
+
+</div>
+</form>
+{% endblock %}
