@@ -10,8 +10,8 @@
 <form action="team-created" method="get" class="form">
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-two-thirds">
-<a href="#" class="govuk-back-link">Back</a>
-<h1 class="govuk-heading-l">Person y added to '---' team</h1>
+<a href="add-to-team-add-one" class="govuk-back-link">Back</a>
+<h1 class="govuk-heading-l">{{ team_member_two }} added to {{ team_name }} team</h1>
 
 <div class="govuk-form-group">
   <label class="govuk-label" for="national-insurance-number">
@@ -27,7 +27,7 @@
 </div>
 
 <table class="govuk-table">
-  <caption class="govuk-table__caption">People in "" team</caption>
+  <caption class="govuk-table__caption">People in {{ team_name }} team</caption>
   <thead class="govuk-table__head">
     <tr class="govuk-table__row">
       <th class="govuk-table__header" scope="col">Name</th>
@@ -36,12 +36,12 @@
   </thead>
   <tbody class="govuk-table__body">
     <tr class="govuk-table__row">
-      <td class="govuk-table__cell" scope="row">Person 1</td>
-      <td class="govuk-table__cell">person1@southwark.gov.uk</td>
+      <td class="govuk-table__cell" scope="row">{{ team_member_one }}</td>
+      <td class="govuk-table__cell">{{ team_member_one }}@southwark.gov.uk</td>
     </tr>
     <tr class="govuk-table__row">
-      <td class="govuk-table__cell" scope="row">Person 2</td>
-      <td class="govuk-table__cell">person2@southwark.gov.uk</td>
+      <td class="govuk-table__cell" scope="row">{{ team_member_two }}</td>
+      <td class="govuk-table__cell">{{ team_member_two }}@southwark.gov.uk</td>
     </tr>
   </tbody>
 </table>

@@ -1,0 +1,45 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+<form action="choose-team" method="get" class="form">
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+<a href="team-created" class="govuk-back-link">Back</a>
+<h1 class="govuk-heading-l">Set up your project</h1>
+
+<p>Create an identifier that will be the word or phrase that you and your team will tag your information to.</p>
+
+<div class="govuk-form-group">
+  <label class="govuk-label" for="identifier">
+    Identifier
+  </label>
+  <input class="govuk-input" id="identifier" name="identifier" type="text">
+</div>
+
+<div class="govuk-form-group">
+  <label class="govuk-label" for="project-detail">
+    Details of project or request
+  </label>
+  <span id="project-detail-hint" class="govuk-hint">
+    This will be the summary of the project that will be visible when the project is searched for or viewed.
+  </span>
+  <textarea class="govuk-textarea" id="project-detail" name="project-detail" rows="5" aria-describedby="project-detail-hint"></textarea>
+</div>
+
+
+
+<div class="block-space">
+	<input class="govuk-button" type="submit" value="Continue">
+</div>
+
+</br>
+    </div>
+</div>
+</form>
+{% endblock %}

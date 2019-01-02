@@ -48,3 +48,34 @@ else {
 res.render('v1/team/search-all')
 }
 });
+
+
+router.get('/v1/team/add-to-team', function (req, res) {
+for (var a in req.query) req.session[a] = req.query[a];
+res.render('v1/team/add-to-team', {
+
+'team_name' : req.session.team_name,
+
+})
+});
+
+router.get('/v1/team/add-to-team-add-one', function (req, res) {
+for (var a in req.query) req.session[a] = req.query[a];
+res.render('v1/team/add-to-team-add-one', {
+
+'team_name' : req.session.team_name,
+'member_one' : req.session.member_one,
+
+})
+});
+
+router.get('/v1/team/add-to-team-add-another', function (req, res) {
+for (var a in req.query) req.session[a] = req.query[a];
+res.render('v1/team/add-to-team-add-another', {
+
+'team_name' : req.session.team_name,
+'team_member_one' : req.session.team_member_one,
+'team_member_two' : req.session.team_member_two,
+
+})
+});
