@@ -112,3 +112,73 @@ $govuk-global-styles: true;
     left: 6px;
   }
 }
+
+
+//radio list
+
+.multiple-choice--hod [type=radio] + label::before {
+  width: 28px;
+  height: 28px;
+}
+
+.multiple-choice--hod [type=radio] + label::after {
+  border: 7px solid;
+  top: 7px;
+  left: 7px;
+}
+
+
+.multiple-choice--hod {
+  .multiple-choice {
+    padding-top: 1px;
+    padding-bottom: 2px;
+  }
+  .govuk-radios__label {
+    padding: 3px 8px 5px;
+  }
+
+  .govuk-radios__item {
+    margin-bottom: 0;
+  }
+}
+
+.button-secondary {
+	background-color: grey;
+  box-shadow: 0 1px 0 black;
+	color: black;
+  border: black 1px solid;
+  &[disabled]:active {
+		background-color: grey;
+    box-shadow: 0 0px 0 black;
+  }
+}
+
+.button-secondary,a {
+  color: black;
+}
+
+.button-secondary:hover {
+	background-color: darken(grey, 5%);
+	color: black;
+}
+
+.tag-01 {
+  background-color:	#005ea5;
+  padding: 10px;
+}
+
+.tag-02 {
+  background-color:	#2e358b;
+  padding: 7px;
+}
+
+.tag-03 {
+  background-color:	#28a197;
+  padding: 7px;
+}
+
+.tag-04 {
+  background-color: #dee0e2;
+  padding: 9px;
+  margin-top: 7px;
+}
