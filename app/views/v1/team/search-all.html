@@ -12,12 +12,109 @@
     <div class="govuk-grid-column-two-thirds">
 <a href="#" class="govuk-back-link">Back</a>
 <h1 class="govuk-heading-l">Search all tagged best practice</h1>
+</div>
+</div>
 
-<p>Use these filters</p>
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-full">
 
-<button type="submit" class="govuk-button">
-  Continue
-</button>
+<p>Use these search --</p>
+
+<div class="filter-box">
+  <div class="govuk-grid-row">
+      <div class="govuk-grid-column-one-third">
+        <h3 class="govuk-heading-s" style="padding-bottom: 8px; padding-top: 15px;">
+          Search best practice by:
+        </h3>
+
+          <legend>
+            <h3 class="govuk-heading-s" style="margin-top: 0px; margin-bottom: 0px; ">Complexity</h3>
+          </legend>
+
+          <div class="govuk-form-group">
+            <fieldset class="govuk-fieldset" aria-describedby="waste-hint">
+              <div class="govuk-checkboxes">
+                <div class="govuk-checkboxes__item">
+                  <input class="govuk-checkboxes__input" id="waste-1" name="waste" type="checkbox" value="carcasses">
+                  <label class="govuk-label govuk-checkboxes__label" for="waste-1">
+                    None
+                  </label>
+                </div>
+                <div class="govuk-checkboxes__item">
+                  <input class="govuk-checkboxes__input" id="waste-2" name="waste" type="checkbox" value="mines">
+                  <label class="govuk-label govuk-checkboxes__label" for="waste-2">
+                    Mobility issues
+                  </label>
+                </div>
+                <div class="govuk-checkboxes__item">
+                  <input class="govuk-checkboxes__input" id="waste-3" name="waste" type="checkbox" value="farm">
+                  <label class="govuk-label govuk-checkboxes__label" for="waste-3">
+                    All complex cases
+                  </label>
+                </div>
+              </div>
+          </div>
+          
+</br>
+
+    <a style="margin-top: 20px; margin-left: 0px; float: left;" href="" role="button" class="govuk-button">Apply filters</a>
+    <div class="clear-filters-charter">
+    <a href="">Clear filters</a>
+    </div>
+
+</div>
+
+<div class="govuk-grid-column-one-third">
+  <div class="filters">
+<div class="form-group" style="margin-top: 57px;">
+<label class="govuk-label" for="select-box" style="font-weight: bold;">Linked case</label>
+<select class="govuk-select" id="select-box" name="select-box" style="width: 80%; background-color: white;">
+<option>Any</option>
+<option>Yes</option>
+<option>No</option>
+</select>
+</div>
+</br>
+<div class="filters">
+<div class="form-group">
+<label class="govuk-label" for="sort" style="font-weight: bold;">Family connection</label>
+<select class="govuk-select" id="sort" name="sort" style="width: 80%; background-color: white;">
+<option>Any</option>
+<option>Yes</option>
+<option>No</option>
+</select>
+</div>
+</div>
+  </div>
+</div>
+
+        <div class="govuk-grid-column-one-third">
+          <div class="filters" style="margin-top: 57px;">
+  <div class="form-group">
+<label class="govuk-label" for="sort-1" style="font-weight: bold;">Case size</label>
+<select class="govuk-select" id="sort-1" name="sort-1" style="width: 80%; background-color: white;">
+<option>Any size</option>
+<option>2</option>
+<option>3</option>
+<option>4</option>
+<option>5</option>
+<option>6</option>
+<option>7</option>
+<option>8</option>
+<option>9</option>
+</select>
+</div>
+
+</form>
+  </div>
+        </div>
+
+
+</div>
+
+</div>
+
+</div>
 </div>
 </form>
 {% endblock %}
