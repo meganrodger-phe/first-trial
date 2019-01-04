@@ -8,11 +8,26 @@
 {% block content %}
 
 <form action="how-doing" method="get" class="form">
+
+
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-two-thirds">
 <a href="how-doing" class="govuk-back-link">Back</a>
 <h1 class="govuk-heading-l" style="margin-bottom: 20px;">Dashboard for SE5 7</h1>
 <p>Dashboard of indicators selected by your team<p>
+
+  <div id="openModal" class="modalDialog">
+  	<div>
+  		<a href="#close" title="Close" class="close">X</a>
+  		<h2 class="govuk-heading-s" style="margin-bottom: 10px; margin-top: 6px;">Indicator tag</h2>
+  		<p><strong>Tagged by:</strong> Person 8</p>
+      <p><strong>Summary:</strong> This indicator is particularly important because it is a particular spike that happened following a last treatment change</p>
+  		<p><span style="background-color:#005ea5; color: white; padding: 5px 8px 5px 8px;">financial</span></p>
+  	</div>
+  </div>
+
+
+
 </div>
 </div>
 </br>
@@ -31,7 +46,7 @@
         <tr class="govuk-table__row">
           <td class="govuk-table__cell" scope="row">Admission episodes for alcohol-related conditions (Narrow)</td>
           <td class="govuk-table__cell">560 in 100,000</td>
-          <td class="govuk-table__cell"><a href="">Tag</a></td>
+          <td class="govuk-table__cell"><a href="#openModal">Tag</a><div id="openModal" class="modalDialog"><div></div></div></td>
         </tr>
         <tr class="govuk-table__row">
           <td class="govuk-table__cell" scope="row"><div class="indicator">Admission episodes for alcohol-related conditions (Broad)</div></td>
