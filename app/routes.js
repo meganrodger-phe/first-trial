@@ -50,6 +50,21 @@ res.render('v1/team/search-all')
 });
 
 
+router.get('/v1/search/what-need', function (req, res){
+var search_what = req.query.search_what
+
+if (search_what === 'search_what_should') {
+res.redirect('search-start-best-practice')
+}
+else if (search_what === 'search_how_doing') {
+res.redirect('search-start-data')
+}
+else {
+res.render('v1/search/what-need')
+}
+});
+
+
 router.get('/v1/team/add-to-team', function (req, res) {
 for (var a in req.query) req.session[a] = req.query[a];
 res.render('v1/team/add-to-team', {
