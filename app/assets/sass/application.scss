@@ -80,36 +80,50 @@ $govuk-global-styles: true;
   padding-left: 30px;
   padding-top: 5px;
   margin-top: 20px;
-  padding-bottom: 30px;
+  padding-bottom: 5px;
   }
 
 .filters {
   min-width: 220px;
   margin-right: 0px;
+}
 
-  .multiple-choice--hod--this {
-    padding-top: 8px;
-    margin-right: 16px;
+.multiple-choice--hod {
+  .multiple-choice {
+    padding-top: 1px;
+    padding-bottom: 2px;
+  }
+  .govuk-checkboxes__label {
+    padding: 3px 2px 5px;
+  }
 
+  .govuk-checkboxes__item {
+    margin-bottom: 0;
+  }
+}
+
+.multiple-choice--hod [type=checkbox] + label::before {
+  width: 25px;
+  height: 25px;
+}
+
+.multiple-choice--hod [type=checkbox] + label::after {
+  border-width: 0 0 3px 3px;
+  width: 11px;
+  height: 4px;
+  top: 8px;
+  left: 6px;
+}
+
+@media screen and (max-width: 640px) {
+  .multiple-choice--hod {
     .multiple-choice {
-      padding-top: 1px;
-      padding-bottom: 10px;
-      margin-left: 3px;
+      margin-bottom: 15px;
+      padding-top: 4px;
     }
   }
-
-  .multiple-choice--hod--this [type=checkbox] + label::before {
-    width: 21px;
-    height: 21px;
-    background-color: white;
-  }
-
-  .multiple-choice--hod--this [type=checkbox] + label::after {
-    border-width: 0 0 3px 3px;
-    width: 11px;
-    height: 4px;
-    top: 8px;
-    left: 6px;
+  .govuk-checkboxes__label {
+    padding: 7px 6px 3px;
   }
 }
 
@@ -239,3 +253,12 @@ $govuk-global-styles: true;
 }
 
 .close:hover { background: #00d9ff; }
+
+.clear-filters {
+  float: left;
+  margin-left: 20px;
+  margin-top: 20px;
+  a {
+    font-size: 18px;
+  }
+}
