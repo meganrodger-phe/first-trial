@@ -176,21 +176,34 @@ $govuk-global-styles: true;
 	color: black;
 }
 
+//financial
 .tag-01 {
   background-color:	#005ea5;
   padding: 10px;
+  color: white;
+  font-weight: bold;
+  p {
+    color: white;
+    font-weight: bold;
+  }
 }
-
+//people
 .tag-02 {
   background-color:	#2e358b;
   padding: 7px;
+  padding: 10px;
+  color: white;
+  font-weight: bold;
 }
-
+//health
 .tag-03 {
   background-color:	#28a197;
   padding: 7px;
+  padding: 10px;
+  color: white;
+  font-weight: bold;
 }
-
+//prevention and treatment
 .tag-04 {
   background-color: #dee0e2;
   padding: 9px;
@@ -218,6 +231,7 @@ $govuk-global-styles: true;
 	/*transition: opacity 400ms ease-in;*/
 	pointer-events: none;
 }
+
 
 .modalDialog:target {
 	opacity:1;
@@ -253,6 +267,10 @@ $govuk-global-styles: true;
 }
 
 .close:hover { background: #00d9ff; }
+
+
+
+
 
 .clear-filters {
   float: left;
