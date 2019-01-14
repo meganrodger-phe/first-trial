@@ -50,17 +50,14 @@ res.render('v1/team/search-all')
 });
 
 
-router.get('/v1/search/what-need', function (req, res){
+router.get('/v1/search/search-start-best-practice', function (req, res){
 var search_what = req.query.search_what
 
-if (search_what === 'search_what_should') {
-res.redirect('search-start-best-practice')
-}
-else if (search_what === 'search_how_doing') {
+if (search_what === 'search_how_doing') {
 res.redirect('search-start-data')
 }
 else {
-res.render('v1/search/what-need')
+res.render('v1/search/search-start-best-practice')
 }
 });
 

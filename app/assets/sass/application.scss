@@ -280,3 +280,45 @@ $govuk-global-styles: true;
     font-size: 18px;
   }
 }
+
+
+
+  .search-box {
+  padding: 0px 0px 0px 0px;
+  border: solid 10px #D8D8D8
+
+  }
+
+.project-band {
+  background-color: #005EA5;
+  margin-top: -30px;
+  margin-left: -2px;
+  margin-right: -2px;
+  min-height: 45px;
+  h3 {
+    padding-top: 10px;
+    padding-left: 30px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #FFF;
+  }
+  }
+  details {
+    padding-left: 30px;
+    padding-bottom: 10px;
+    margin-top: 0px;
+  }
+
+  .govuk-details__text {
+    color: white;
+    font-size: 17px;
+  }
+
+.summary-side-bar {
+  margin-top: 60px;
+  background-color: #005EA5;
+  padding: 20px 20px 20px 20px;
+  p {font-size: 17px;
+    color: white;}
+  h3 {color: white;}
+}
