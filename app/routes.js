@@ -44,6 +44,9 @@ res.redirect('tagged-best-practice')
 else if (which_practice === 'uploaded_ce') {
 res.redirect('uploaded-engagement')
 }
+else if (which_practice === 'roi_tools') {
+res.redirect('roi-tools')
+}
 else {
 res.render('v1/team/search-all')
 }
