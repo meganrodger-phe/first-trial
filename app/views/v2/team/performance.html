@@ -1,0 +1,96 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+<form action="how-doing" method="get" class="form">
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+<a href="how-doing" class="govuk-back-link">Back</a>
+<span class="govuk-caption-m">alc-200119</span>
+<h1 class="govuk-heading-l" style="margin-bottom: 20px;">Service performance data</h1>
+
+<div id="openModal" class="modalDialog">
+  <div>
+    <a href="#close" title="Close" class="close">X</a>
+    <h2 class="govuk-heading-s" style="margin-bottom: 5px; margin-top: 6px;">Indicator tag</h2>
+    <p>May 18 service data</p>
+    <p><strong>Tagged by:</strong> Person 8</p>
+    <p><strong>Tagged for:</strong> Alcohol treatment</p>
+    <p><strong>Summary:</strong> This indicator shows that new presentations are going up more steeply and the discharges are not going up at the same speed.</p>
+    <p><span style="background-color:#dee0e2; padding: 5px 8px 5px 8px;">treatment</span></p>
+  </div>
+</div>
+
+<p>Service performance data tagged by your team</p>
+<table class="govuk-table">
+  <thead class="govuk-table__head">
+    <tr class="govuk-table__row">
+      <th class="govuk-table__header" scope="col" style="max-width: 100px;">Month</th>
+      <th class="govuk-table__header" scope="col" style="max-width: 100px;">Number in treatment</th>
+      <th class="govuk-table__header" scope="col" style="max-width: 100px;">New presentations</th>
+      <th class="govuk-table__header" scope="col" style="max-width: 100px;">Discharges</th>
+      <th class="govuk-table__header" scope="col" style="max-width: 100px;"></th>
+      <th class="govuk-table__header" scope="col" style="max-width: 100px;">Select for project</th>
+    </tr>
+  </thead>
+  <tbody class="govuk-table__body">
+    <tr class="govuk-table__row">
+      <td class="govuk-table__cell" scope="row">Apr 2018</td>
+      <td class="govuk-table__cell">4495</td>
+      <td class="govuk-table__cell">821</td>
+      <td class="govuk-table__cell">716</td>
+      <td class="govuk-table__cell"></td>
+      <td class="govuk-table__cell"><div class="block-space" style="display: inline-block; margin-top: 25px;"><a class="govuk-button button-secondary" type="submit">
+select</a></div></td>
+    </tr>
+    <tr class="govuk-table__row">
+      <td class="govuk-table__cell">May 2018</td>
+      <td class="govuk-table__cell">4348</td>
+      <td class="govuk-table__cell">803</td>
+      <td class="govuk-table__cell">721</td>
+      <td class="govuk-table__cell"><a href="#openModal">Tag</a><div id="openModal" class="modalDialog"><div></div></div></td>
+      <td class="govuk-table__cell"><div class="block-space" style="display: inline-block; margin-top: 25px;"><a class="govuk-button button-secondary" type="submit">
+select</a></div></td>
+    </tr>
+    <tr class="govuk-table__row">
+      <td class="govuk-table__cell">May 2018</td>
+      <td class="govuk-table__cell">4281</td>
+      <td class="govuk-table__cell">780</td>
+      <td class="govuk-table__cell">736</td>
+      <td class="govuk-table__cell"></td>
+      <td class="govuk-table__cell"><div class="block-space" style="display: inline-block; margin-top: 25px;"><a class="govuk-button button-secondary" type="submit">
+select</a></div></td>
+    </tr>
+    <tr class="govuk-table__row">
+      <td class="govuk-table__cell">Jun 2018</td>
+      <td class="govuk-table__cell">3988</td>
+      <td class="govuk-table__cell">745</td>
+      <td class="govuk-table__cell">747</td>
+      <td class="govuk-table__cell"><a href="">Tag</a></td>
+      <td class="govuk-table__cell"><div class="block-space" style="display: inline-block; margin-top: 25px;"><a class="govuk-button button-secondary" type="submit">
+select</a></div></td>
+    </tr>
+    <tr class="govuk-table__row">
+      <td class="govuk-table__cell">Jul 2018</td>
+      <td class="govuk-table__cell">3857</td>
+      <td class="govuk-table__cell">732</td>
+      <td class="govuk-table__cell">756</td>
+      <td class="govuk-table__cell"></td>
+      <td class="govuk-table__cell"><div class="block-space" style="display: inline-block; margin-top: 25px; "><a class="govuk-button button-secondary" type="submit">
+select</a></div></td>
+    </tr>
+  </tbody>
+</table>
+
+
+</div>
+</div>
+</div>
+
+</form>
+{% endblock %}

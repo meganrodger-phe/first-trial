@@ -1,0 +1,197 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+<form action="" method="get" class="form">
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+<h1 class="govuk-heading-l">View information by historic cases</h1>
+</div>
+</div>
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-one-third">
+      <div class="search-box">
+    <div class="govuk-form-group">
+      <label class="govuk-label" for="width-20" style="background-color: #D8D8D8; padding: 10px 0px 5px 0px; margin: 0;">
+          <strong>Search</strong>
+        </label>
+        <input class="govuk-input govuk-input--width-20" id="width-20" name="width-20" type="text">
+      </div>
+      <button type="submit" class="govuk-button">
+  Save and continue
+</button>
+</div>
+
+
+
+<div class="filter-box">
+        <h3 class="govuk-heading-s" style="padding-bottom: 8px; padding-top: 15px;">
+          Search all historic requests by:
+        </h3>
+        <div class="filters">
+      <div class="form-group" style="margin-top: 5px;">
+        <legend>
+          <h3 class="govuk-heading-s" style="margin-top: 0px; margin-bottom: 10px; ">Date of request</h3>
+        </legend>
+      <select class="govuk-select" id="select-box" name="select-box" style="width: 80%; background-color: white;">
+      <option>Any</option>
+      <option>Jan 2019</option>
+      <option>Dec 2018</option>
+      <option>Nov 2018</option>
+      <option>Oct 2018</option>
+      <option>Sept 2018</option>
+      <option>Aug 2018</option>
+      <option>Jul 2018</option>
+      <option>Jun 2018</option>
+      <option>May 2018</option>
+      <option>Apr 2018</option>
+      </select>
+      </div>
+      </br>
+      <div class="filters">
+      <div class="form-group">
+      <label class="govuk-label" for="sort" style="font-weight: bold;">Age group</label>
+      <select class="govuk-select" id="sort" name="sort" style="width: 80%; background-color: white;">
+      <option>Any</option>
+      <option>0-10</option>
+      <option>11-18</option>
+      <option>19-29</option>
+      <option>30-39</option>
+      <option>40-49</option>
+      <option>50-59</option>
+      <option>60-69</option>
+      <option>70+</option>
+      </select>
+      </div>
+      </div>
+        </div>
+
+
+    <a style="margin-top: 10px; margin-left: 0px; float: left;" href="" role="button" class="govuk-button">Apply filters</a>
+    <div class="clear-filters">
+    <a href="">Clear filters</a>
+    </div>
+
+  <div class="govuk-form-group">
+    <fieldset class="govuk-fieldset" aria-describedby="waste-hint">
+      <div class="multiple-choice--hod">
+        <div class="govuk-checkboxes__item">
+          <input class="govuk-checkboxes__input" id="waste-1" name="waste" type="checkbox" value="carcasses">
+          <label class="govuk-label govuk-checkboxes__label" for="waste-1">
+            Financial impact
+          </label>
+        </div>
+        <div class="govuk-checkboxes__item">
+          <input class="govuk-checkboxes__input" id="waste-2" name="waste" type="checkbox" value="mines">
+          <label class="govuk-label govuk-checkboxes__label" for="waste-2">
+            People impact
+          </label>
+        </div>
+        <div class="govuk-checkboxes__item">
+          <input class="govuk-checkboxes__input" id="waste-3" name="waste" type="checkbox" value="farm">
+          <label class="govuk-label govuk-checkboxes__label" for="waste-3">
+            Health impact
+          </label>
+        </div>
+      </div>
+    </fieldset>
+  </div>
+
+          <div class="filters" style="margin-top: 57px;">
+            <div class="form-group">
+          <label class="govuk-label" for="sort-1" style="font-weight: bold;">Subject area</label>
+          <select class="govuk-select" id="sort-1" name="sort-1" style="width: 80%; background-color: white;">
+          <option>Alcohol treatment</option>
+          <option>Drug treatment</option>
+          <option>NHS health checks</option>
+          <option>Child obesity</option>
+          <option>Sexual health</option>
+          <option>Tobacco control</option>
+          <option>Air quality</option>
+          <option>Best start in life</option>
+          </select>
+          </div>
+          </br>
+          <div class="filters">
+          <div class="form-group">
+          <label class="govuk-label" for="sort" style="font-weight: bold;">Geographic area</label>
+          <select class="govuk-select" id="sort" name="sort" style="width: 80%; background-color: white;">
+          <option>Any</option>
+          <option>North</option>
+          <option>North East</option>
+          <option>North West</option>
+          <option>West Midlands</option>
+          <option>East Midlands</option>
+          <option>London</option>
+          <option>South East</option>
+          <option>South West</option>
+          </select>
+          </div>
+          </div>
+
+</form>
+  </div>
+        </div>
+
+
+</div>
+
+<div class="govuk-grid-column-two-thirds">
+  <table class="govuk-table" style="max-width: 700px;">
+    <thead class="govuk-table__head">
+      <tr class="govuk-table__row">
+        <th class="govuk-table__header" scope="col">Projects</th>
+        <th class="govuk-table__header" scope="col"></th>
+        <th class="govuk-table__header" scope="col"></th>
+      </tr>
+    </thead>
+    <tbody class="govuk-table__body">
+      <tr class="govuk-table__row">
+        <td class="govuk-table__cell" style="max-width: 450px;"><strong>Project code:</strong> Alcohol-000000</br></br>
+        <strong>Project summary:</strong> A sentence that will describe what the project was about and the focus</td>
+        <td class="govuk-table__cell"><strong>Team:</strong> Team 4</br></br><strong>Date of request:</strong> 12/12/2018 </td>
+        <td class="govuk-table__cell"><strong>Subject area:</strong> alcohol treatment</br></br><strong>Geographic area:</strong> Southwark</td>
+      </tr>
+      <tr class="govuk-table__row">
+        <td class="govuk-table__cell" style="max-width: 450px;"><strong>Project code:</strong> Obesity-000000</br></br>
+        <strong>Project summary:</strong> A sentence that will describe what the project was about and the focus</td>
+        <td class="govuk-table__cell"><strong>Team:</strong> Team 8</br></br><strong>Date of request:</strong> 12/12/2018 </td>
+        <td class="govuk-table__cell"><strong>Subject area:</strong> obesity</br></br><strong>Geographic area:</strong> Southwark</td>
+      </tr>
+      <tr class="govuk-table__row">
+        <td class="govuk-table__cell" style="max-width: 450px;"><strong>Project code:</strong> Drug-000000</br></br>
+        <strong>Project summary:</strong> A sentence that will describe what the project was about and the focus</td>
+        <td class="govuk-table__cell"><strong>Team:</strong> Team 2</br></br><strong>Date of request:</strong> 12/12/2018 </td>
+        <td class="govuk-table__cell"><strong>Subject area:</strong> drug treatment</br></br><strong>Geographic area:</strong> Southwark</td>
+      </tr>
+      <tr class="govuk-table__row">
+        <td class="govuk-table__cell" style="max-width: 450px;"><strong>Project code:</strong> Alcohol-000000</br></br>
+        <strong>Project summary:</strong> A sentence that will describe what the project was about and the focus</td>
+        <td class="govuk-table__cell"><strong>Team:</strong> Team 1</br></br><strong>Date of request:</strong> 12/12/2018 </td>
+        <td class="govuk-table__cell"><strong>Subject area:</strong> alcohol treatment</br></br><strong>Geographic area:</strong> Southwark</td>
+      </tr>
+      <tr class="govuk-table__row">
+        <td class="govuk-table__cell" style="max-width: 450px;"><strong>Project code:</strong> Smoking-000000</br></br>
+        <strong>Project summary:</strong> A sentence that will describe what the project was about and the focus</td>
+        <td class="govuk-table__cell"><strong>Team:</strong> Team 8</br></br><strong>Date of request:</strong> 12/12/2018 </td>
+        <td class="govuk-table__cell"><strong>Subject area:</strong> smoking</br></br><strong>Geographic area:</strong> Southwark</td>
+      </tr>
+      <tr class="govuk-table__row">
+        <td class="govuk-table__cell" style="max-width: 450px;"><strong>Project code:</strong> Sexual-health-000000</br></br>
+        <strong>Project summary:</strong> A sentence that will describe what the project was about and the focus</td>
+        <td class="govuk-table__cell"><strong>Team:</strong> Team 2</br></br><strong>Date of request:</strong> 12/12/2018 </td>
+        <td class="govuk-table__cell"><strong>Subject area:</strong> sexual health</br></br><strong>Geographic area:</strong> Southwark</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+</div>
+</div>
+</form>
+{% endblock %}

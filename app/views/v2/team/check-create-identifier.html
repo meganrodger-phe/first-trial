@@ -1,0 +1,106 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+<form action="project-created" method="get" class="form">
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+<a href="create-identifier" class="govuk-back-link">Back</a>
+<h1 class="govuk-heading-l">Check your project information</h1>
+
+<dl class="app-check-your-answers app-check-your-answers--short">
+  <div class="app-check-your-answers__contents">
+    <dt class="app-check-your-answers__question">
+      Project identifier
+    </dt>
+    <dd class="app-check-your-answers__answer">
+      New models in alcohol and drug management service delivery
+    </dd>
+    <dd class="app-check-your-answers__change">
+      <a href="#">
+        Change<span class="govuk-visually-hidden"> project name</span>
+      </a>
+    </dd>
+  </div>
+
+  <div class="app-check-your-answers__contents">
+    <dt class="app-check-your-answers__question">
+      Project summary
+    </dt>
+    <dd class="app-check-your-answers__answer">
+      Our service contract is ending, and I have become aware of a new model of service delivery that I think will be effective. Can we collect together information about this and put together a case for funding a new experimental model.
+    </dd>
+    <dd class="app-check-your-answers__change">
+      <a href="#">
+        Change<span class="govuk-visually-hidden"> summary</span>
+      </a>
+    </dd>
+  </div>
+
+  <div class="app-check-your-answers__contents">
+    <dt class="app-check-your-answers__question">
+      Team name
+    </dt>
+    <dd class="app-check-your-answers__answer">
+    Current_01
+    </dd>
+    <dd class="app-check-your-answers__change">
+      <a href="#">
+        Change<span class="govuk-visually-hidden"> Instructions for team</span>
+      </a>
+    </dd>
+  </div>
+
+  <div class="app-check-your-answers__contents">
+    <dt class="app-check-your-answers__question">
+      Team members
+    </dt>
+    <dd class="app-check-your-answers__answer">
+    Person 7, Person 8
+    </dd>
+    <dd class="app-check-your-answers__change">
+      <a href="#">
+        Change<span class="govuk-visually-hidden"> </span>
+      </a>
+    </dd>
+  </div>
+
+  <div class="app-check-your-answers__contents">
+    <dt class="app-check-your-answers__question">
+      Instructions for team
+    </dt>
+    <dd class="app-check-your-answers__answer">
+    This is the instructions that you entered here
+    </dd>
+    <dd class="app-check-your-answers__change">
+      <a href="#">
+        Change<span class="govuk-visually-hidden"> </span>
+      </a>
+    </dd>
+  </div>
+
+</dl>
+
+
+
+<h2 class="govuk-heading-m">Submit and create your project</h2>
+
+<p>
+  By submitting these details you will create a project that will be viewable by all members of your team.
+</p>
+
+
+<div class="block-space">
+	<input class="govuk-button" type="submit" value="Submit">
+</div>
+
+</br>
+    </div>
+</div>
+</form>
+{% endblock %}

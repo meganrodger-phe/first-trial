@@ -1,0 +1,78 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+<form action="how-doing" method="get" class="form">
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-full">
+<a href="how-doing" class="govuk-back-link">Back</a>
+<span class="govuk-caption-m">alc-200119</span>
+<h1 class="govuk-heading-l" style="margin-bottom: 20px;">Data comparisons</h1>
+<p style="margin-bottom: 40px;">Data comparisons selected by team<p>
+  <table class="govuk-table">
+    <caption class="govuk-table__caption">Indicators</caption>
+    <thead class="govuk-table__head">
+      <tr class="govuk-table__row">
+        <th class="govuk-table__header" scope="col">Indicator</th>
+        <th class="govuk-table__header" scope="col">SE5 7 - area selected on map</th>
+        <th class="govuk-table__header" scope="col">SE5 - area selected <a href="">here</a></th>
+        <th class="govuk-table__header" scope="col">Southwark</th>
+        <th class="govuk-table__header" scope="col">UK wide</th>
+        <th class="govuk-table__header" scope="col">Statistical neighbour</th>
+        <th class="govuk-table__header" scope="col">Select for project</th>
+      </tr>
+    </thead>
+    <tbody class="govuk-table__body">
+      <tr class="govuk-table__row">
+        <th class="govuk-table__header" scope="row">Admission episodes for alcohol-related conditions (Narrow)</th>
+        <td class="govuk-table__cell">476 in 100,000</td>
+        <td class="govuk-table__cell">365 in 100,000</td>
+        <td class="govuk-table__cell">381 in 100,000 <a href="" style="color: blue;">tag</a></td>
+        <td class="govuk-table__cell">421 in 100,000</td>
+        <td class="govuk-table__cell">456 in 100,000</td>
+        <td class="govuk-tabel__cell"><div class="block-space" style="display: inline-block; margin-top: 25px;"><a class="govuk-button button-secondary" type="submit">
+  select</a></div></td>
+      </tr>
+      <tr class="govuk-table__row">
+        <th class="govuk-table__header" scope="row">Admission episodes for alcohol-related conditions (Broad)</th>
+        <td class="govuk-table__cell">53 in 100,000 <a href="" style="color: blue;">tag</a></td>
+        <td class="govuk-table__cell">42 in 100,000</td>
+        <td class="govuk-table__cell">46 in 100,000</td>
+        <td class="govuk-table__cell">48 in 100,000</td>
+        <td class="govuk-table__cell">47 in 100,000</td>
+        <td class="govuk-tabel__cell"><div class="block-space" style="display: inline-block; margin-top: 25px;"><a class="govuk-button button-secondary" type="submit">
+  select</a></div></td>
+      </tr>
+      <tr class="govuk-table__row">
+        <th class="govuk-table__header" scope="row">Admission episodes for alcohol-specific conditions</th>
+        <td class="govuk-table__cell">68 in 100,000</td>
+        <td class="govuk-table__cell">73 in 100,000</td>
+        <td class="govuk-table__cell">63 in 100,000</td>
+        <td class="govuk-table__cell">64 in 100,000</td>
+        <td class="govuk-table__cell">68 in 100,000</td>
+        <td class="govuk-tabel__cell"><div class="block-space" style="display: inline-block; margin-top: 25px;"><a class="govuk-button button-secondary" type="submit">
+  select</a></div></td>
+      </tr>
+      <tr class="govuk-table__row">
+        <th class="govuk-table__header" scope="row">Alcohol-related mortality</th>
+        <td class="govuk-table__cell">24 in 100,000</td>
+        <td class="govuk-table__cell">18 in 100,000</td>
+        <td class="govuk-table__cell">17 in 100,000 <a href="" style="color: blue;">tag</a></td>
+        <td class="govuk-table__cell">26 in 100,000</td>
+        <td class="govuk-table__cell">20 in 100,000</td>
+        <td class="govuk-tabel__cell"><div class="block-space" style="display: inline-block; margin-top: 25px;"><a class="govuk-button button-secondary" type="submit">
+  select</a></div></td>
+      </tr>
+    </tbody>
+  </table>
+
+</div>
+</div>
+
+</form>
+{% endblock %}

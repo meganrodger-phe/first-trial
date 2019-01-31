@@ -1,0 +1,53 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+<form action="add-instructions" method="get" class="form">
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+<a href="create-identifier" class="govuk-back-link">Back</a>
+<h1 class="govuk-heading-l">Choose a team to add to --- project</h1>
+
+<form>
+  <fieldset class="govuk-fieldset">
+    <legend class="govuk-fieldset__heading" style="margin-bottom:15px;">
+      <h3 class="govuk-heading-s">Teams in Southwark</h3>
+    </legend>
+    <div class="multiple-choice--hod govuk-radios">
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="month-1" type="radio" name="radio-group" value="This month">
+        <label class="govuk-label govuk-radios__label" for="month-1"><strong>Team name 1</strong> - Person 1, Person 2, Person 3, Person 4</label>
+      </div>
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="month-2" type="radio" name="radio-group" value="February 2018">
+        <label class="govuk-label govuk-radios__label" for="month-2"><strong>Team name 2</strong> - Person 2, Person 4, Person 5, Person 6, Person 7</label>
+      </div>
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="month-3" type="radio" name="radio-group" value="January 2018">
+        <label class="govuk-label govuk-radios__label" for="month-3"><strong>Team name 3</strong> - Person 1, Person 2, Person 6, Person 8</label>
+      </div>
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="month-4" type="radio" name="radio-group" value="March 2018">
+        <label class="govuk-label govuk-radios__label" for="month-4"><strong>Team name 4</strong> - Person 3, Person 4, Person 7, Person 9</label>
+      </div>
+    </div>
+  </fieldset>
+</form>
+
+</br>
+<a href="create-team" style="font-size: 20px;">add a new team</a></br>
+</br>
+</br>
+<button type="submit" class="govuk-button">
+  Continue
+</button>
+</br>
+    </div>
+</div>
+</form>
+{% endblock %}

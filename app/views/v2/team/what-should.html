@@ -1,0 +1,62 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+<form action="search-all" method="get" class="form">
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+<a href="choose-type" class="govuk-back-link">Back</a>
+<span class="govuk-caption-m">alc-200119</span>
+<h1 class="govuk-heading-l">Best practice and citizen engagement tagged by team</h1>
+
+<div class="govuk-form-group">
+  <fieldset class="govuk-fieldset" aria-describedby="sign-in-hint">
+    <legend class="govuk-fieldset__legend govuk-fieldset__legend--s">
+      <h2 class="govuk-fieldset__heading_">
+        Choose what you want to view
+      </h2>
+    </legend>
+    <!--<span id="sign-in-hint" class="govuk-hint">
+      You&#39;ll need an account to prove your identity and complete your Self Assessment.
+    </span>!-->
+    <div class="govuk-radios">
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="tagged_bp" name="which_practice" type="radio" value="tagged_bp" aria-describedby="what-1-item-hint">
+        <label class="govuk-label govuk-radios__label " for="tagged_bp">
+          Tagged best practice and guidelines
+        </label>
+      </div>
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="uploaded_ce" name="which_practice" type="radio" value="uploaded_ce" aria-describedby="what-2-item-hint">
+        <label class="govuk-label govuk-radios__label " for="uploaded_ce">
+        Uploaded citizen engagement
+        </label>
+      </div>
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="roi_tools" name="which_practice" type="radio" value="roi_tools" aria-describedby="what-4-item-hint">
+        <label class="govuk-label govuk-radios__label " for="roi_tools">
+        Return on investment tools
+        </label>
+      </div>
+      <p>or</p>
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="search_all" name="which_practice" type="radio" value="search_all" aria-describedby="what-3-item-hint">
+        <label class="govuk-label govuk-radios__label " for="search_all">
+          Search all best practice
+        </label>
+      </div>
+    </div>
+  </fieldset>
+</div>
+
+<button type="submit" class="govuk-button">
+  Continue
+</button>
+</div>
+</form>
+{% endblock %}

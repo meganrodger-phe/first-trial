@@ -1,0 +1,36 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+<form action="check-create-identifier" method="get" class="form">
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+<a href="team-created" class="govuk-back-link">Back</a>
+<h1 class="govuk-heading-l">Add any instructions or notes for your team for: </br><span style="font-size:22px;">'New models in alcohol and drug management service delivery'</span></h1>
+
+<div class="govuk-form-group">
+  <label class="govuk-label" for="instructions">
+    Details of project or request
+  </label>
+  <span id="project-detail-hint" class="govuk-hint">
+    This will be viewed by your team when they view the project, they will be sent an email with this detail in when you submit the project for creating.
+  </span>
+  <textarea class="govuk-textarea" id="instructions" name="instructions" rows="5" aria-describedby="project-detail-hint"></textarea>
+</div>
+
+
+
+<div class="block-space">
+	<input class="govuk-button" type="submit" value="Continue">
+</div>
+
+</br>
+    </div>
+</div>
+</form>
+{% endblock %}

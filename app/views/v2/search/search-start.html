@@ -1,0 +1,53 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+<form action="search-start-best-practice" method="get" class="form">
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+    <a href="../start-page" class="govuk-back-link">Back</a>
+<div class="govuk-form-group">
+  <fieldset class="govuk-fieldset" aria-describedby="sign-in-hint">
+
+    <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+      <h2 class="govuk-fieldset__heading">
+        Choose what you want to view
+      </h2>
+    </legend>
+    <!--<span id="sign-in-hint" class="govuk-hint">
+      You&#39;ll need an account to prove your identity and complete your Self Assessment.
+    </span>!-->
+    <div class="govuk-radios">
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="search_how_doing" name="search_what" type="radio" value="search_how_doing" aria-describedby="what-1-item-hint">
+        <label class="govuk-label govuk-radios__label govuk-label--s" for="search_how_doing">
+          How are we doing?
+        </label>
+        <span id="how-doing-item-hint" class="govuk-hint govuk-radios__hint">
+          Data by subject area, and geographical area
+        </span>
+      </div>
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="search_what_should" name="search_what" type="radio" value="search_what_should" aria-describedby="what-2-item-hint">
+        <label class="govuk-label govuk-radios__label govuk-label--s" for="search_what_should">
+          What should we do?
+        </label>
+        <span id="what-2-item-hint" class="govuk-hint govuk-radios__hint">
+        View best practice by papers, articles and citizens engagement documents
+      </div>
+    </div>
+  </fieldset>
+</div>
+<button type="submit" class="govuk-button">
+  Continue
+</button>
+
+    </div>
+</div>
+</form>
+{% endblock %}
