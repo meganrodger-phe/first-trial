@@ -1,0 +1,30 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+<form action="/v1/historic-start" method="get" class="form">
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+<h1 class="govuk-heading-l">Digital Health Intelligence</h1>
+
+<p>When</br>
+   why</br>
+  what</br>
+   who</p>
+  <h2 class="govuk-heading-m">Sign-in to your Digital Health Intelligence workspace</h2>
+
+<p>You can access the projects that you are working on and search for data and evidence</p>
+<a href="team/project-index">project index here</a>
+
+<p>or you can search for data and evidence....</p>
+<a href="search/search-start">search function here</a>
+
+    </div>
+</div>
+</form>
+{% endblock %}

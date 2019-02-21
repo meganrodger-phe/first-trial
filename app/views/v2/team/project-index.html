@@ -1,0 +1,25 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+<form action="project-space-progress" method="get" class="form">
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+<a href="" class="govuk-back-link">Back</a>
+<h1 class="govuk-heading-l">Your live projects</h1>
+<p>Big description of what a project space is and how to use this area - your space to do this - where your team can add 'tag' summaries and summarise</p>
+<p>list of your projects in link form or radio buttons</p>
+<button type="submit" class="govuk-button">
+  Continue
+</button>
+</br>
+<a href="create-identifier" style="font-size: 20px;">Start a project</a>
+    </div>
+</div>
+</form>
+{% endblock %}
