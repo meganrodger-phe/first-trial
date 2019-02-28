@@ -1,0 +1,39 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+<form action="team/project-index" method="get" class="form">
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+<h1 class="govuk-heading-l">Sign in to Digital Health Intelligence</h1>
+
+<div class="govuk-form-group">
+  <label class="govuk-label" for="width-20">
+    Username
+  </label>
+  <span id="width-20-hint" class="govuk-hint bold">
+      This will be your email address
+    </span>
+  <input class="govuk-input govuk-input--width-20" id="width-20" name="width-20" type="text">
+</div>
+
+<div class="govuk-form-group" style="margin-bottom: 10px;">
+  <label class="govuk-label" for="width-20">
+    Password
+  </label>
+  <input class="govuk-input govuk-input--width-20" id="width-20" name="width-20" type="text">
+</div>
+
+<a href="forgot-password" style="margin-bottom: 20px;">forgot your password</a></br>
+
+<button type="submit" class="govuk-button" style="margin-top: 20px;">
+  Continue
+</button>
+    </div>
+</form>
+{% endblock %}

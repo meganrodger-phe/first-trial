@@ -165,9 +165,21 @@ $govuk-global-styles: true;
 		background-color: grey;
     box-shadow: 0 0px 0 black;
   }
+
+  a:active {
+    color: black;
+  }
+
 }
 
-.button-secondary,a {
+.second-button {
+  .govuk-button:link, .govuk-button:visited, .govuk-button:active, .govuk-button:hover {
+      color: black;
+      text-decoration: none;
+  }
+}
+
+.button-secondary,a:active {
   color: black;
 }
 
@@ -343,6 +355,7 @@ $govuk-global-styles: true;
   }
   p {
     color: white;
+    font-size: 18px;
   }
 
   a {
@@ -379,4 +392,13 @@ $govuk-global-styles: true;
     font-size: 22px;
     line-height: 40px;
   }
+}
+
+.unfold-summary {
+  margin-left: -30px;
+}
+
+.strong-label {
+    font-weight: bold;
+    font-size: 24px;
 }
