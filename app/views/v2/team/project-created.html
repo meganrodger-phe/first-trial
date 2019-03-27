@@ -2,7 +2,7 @@
 {% extends "layout.html" %}
 
 {% block pageTitle %}
-  GOV.UK Prototype Kit
+Digital Health Intelligence
 {% endblock %}
 
 {% block content %}
@@ -14,9 +14,9 @@
 <div class="govuk-box-highlight confirm-page new">
   <span class="hod-checkmark move"></span>
   <h2 class="govuk-heading-l">
-    Project //PROJECT NAME// created
+    Project {{ identifier }} created
   </h2>
-  <p>The project has been created with the members: <strong>Person 7 and Person 8</strong></p>
+  <p>The project has been created with <strong>{{ group_name }}</strong></p>
   <p>
     An email has been sent to these members inviting them to access the project area. All members will begin to be able to view and save information in this project space.
   </p>

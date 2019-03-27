@@ -1,0 +1,46 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Digital Health Intelligence
+{% endblock %}
+
+{% block content %}
+
+<form action="comparison-added" method="get" class="form">
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+<a href="" class="govuk-back-link">Back</a>
+<h1 class="govuk-heading-l">Are you sure you want to add this indicator to your shortlisted material?</h1>
+
+<p style="max-width: 700px;"><strong>Tag summary:</strong> This indicator is particularly important because it is a particular spike that happened following a last treatment change</p>
+<p><strong>Tags:</strong> people prevention</p>
+<p><strong>Tagged by:</strong> Person 8</p>
+
+
+<table class="govuk-table" style="max-width: 700px;">
+  <thead class="govuk-table__head">
+    <tr class="govuk-table__row">
+      <th class="govuk-table__header" scope="col">Indicator</th>
+      <th class="govuk-table__header" scope="col">Amount</th>
+      <th class="govuk-table__header" scope="col">How does it compare with benchmark</th>
+      <th class="govuk-table__header" scope="col"></th>
+    </tr>
+  </thead>
+  <tbody class="govuk-table__body">
+    <tr class="govuk-table__row">
+      <td class="govuk-table__cell">Admission episodes for alcohol-specific conditions - Under 18s</td>
+      <td class="govuk-table__cell">13.8 in 100,000</td>
+      <td class="govuk-table__cell">Worse</td>
+      <td class="govuk-table__cell"><a href="">remove</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="block-space">
+	<input class="govuk-button" type="submit" value="Shortlist this indicator">
+</div>
+</div>
+</div>
+</form>
+{% endblock %}
