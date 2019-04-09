@@ -102,10 +102,6 @@ for (var a in req.query) req.session[a] = req.query[a];
 res.render('v2/team/create-identifier');
 });
 
-router.get('/v2/team/choose-team', function (req, res) {
-for (var a in req.query) req.session[a] = req.query[a];
-res.render('v2/team/choose-team');
-});
 
 router.get('/v2/team/add-instructions', function (req, res) {
 for (var a in req.query) req.session[a] = req.query[a];
@@ -155,6 +151,15 @@ res.render('v2/team/view-selected-material-empty', {
 
 'identifier' : req.session.identifier,
 'project_detail' : req.session.project_detail,
+
+})
+});
+
+router.get('/v2/team/choose-team', function (req, res) {
+for (var a in req.query) req.session[a] = req.query[a];
+res.render('v2/team/choose-team', {
+
+'identifier' : req.session.identifier,
 
 })
 });

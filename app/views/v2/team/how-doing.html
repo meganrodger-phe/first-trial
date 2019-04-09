@@ -10,13 +10,38 @@ Digital Health Intelligence
 <form action="how-doing" method="get" class="form">
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-two-thirds">
-<a href="project-space-progress" class="govuk-back-link" style="margin-top: 0px;">Back to project space</a>
+      <div class="govuk-breadcrumbs">
+        <ol class="govuk-breadcrumbs__list">
+          <li class="govuk-breadcrumbs__list-item">
+            <a class="govuk-breadcrumbs__link" href="project-index">All projects</a>
+          </li>
+          <li class="govuk-breadcrumbs__list-item">
+            <a class="govuk-breadcrumbs__link" href="project-space-progress">Project space</a>
+          </li>
+          <li class="govuk-breadcrumbs__list-item">
+            <a class="govuk-breadcrumbs__link" aria-current="page">Data saved in project space</a>
+          </li>
+        </ol>
+      </div>
+<a href="project-space-progress" class="govuk-back-link" style="margin-top: 0px;">Back</a>
 <h1 class="govuk-heading-l" style="margin-bottom: 20px;">Data saved in this project space</h1>
-  <div class="data-types">
+
 <h2 class="govuk-heading-m">Types of data</h2>
-<a href="comparison">View the dashboard of the area</a></br>
-<a href="visualisations">View selected visualisations</a></br>
-<a href="performance">View service performance data</a>
+
+<div class="type-information">
+<h3 class="govuk-heading-s">Dashboard of the indicators for selected area</h3>
+<p>Indicators selected relevant to the area selected.</p>
+<a href="comparison">view indicators saved to dashboard</a></br>
+</div>
+<div class="type-information">
+<h3 class="govuk-heading-s">Visualisations of data</h3>
+<p>Visualisations created from the data chosen or uploaded to this workspace.</p>
+<a href="visualisations">view selected visualisations</a></br>
+</div>
+<div class="type-information">
+  <h3 class="govuk-heading-s">Service performance data</h3>
+  <p>Data that has been selected from your area's service information</p>
+<a href="performance">view service performance data</a>
 </div>
 
 
