@@ -11,12 +11,15 @@ Digital Health Intelligence
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-two-thirds">
 <a href="" class="govuk-back-link">Back</a>
-<h1 class="govuk-heading-l">Check before you create your project</h1>
-
+<h1 class="govuk-heading-l">New project summary</h1>
+<p>
+ Before you finish creating {{ identifier }},
+ ensure your project details are correct.  
+</p>
 <dl class="app-check-your-answers app-check-your-answers--short">
   <div class="app-check-your-answers__contents">
     <dt class="app-check-your-answers__question">
-      Project identifier
+      Project name
     </dt>
     <dd class="app-check-your-answers__answer">
       {{ identifier }}
@@ -37,21 +40,21 @@ Digital Health Intelligence
     </dd>
     <dd class="app-check-your-answers__change">
       <a href="#">
-        Change<span class="govuk-visually-hidden"> summary</span>
+        Edit<span class="govuk-visually-hidden"> summary</span>
       </a>
     </dd>
   </div>
 
   <div class="app-check-your-answers__contents">
     <dt class="app-check-your-answers__question">
-      Team
+      Team members
     </dt>
     <dd class="app-check-your-answers__answer">
     {{ group_name }}
     </dd>
     <dd class="app-check-your-answers__change">
       <a href="#">
-        Change<span class="govuk-visually-hidden"> Instructions for team</span>
+        Update<span class="govuk-visually-hidden"> Instructions for team</span>
       </a>
     </dd>
   </div>
@@ -59,14 +62,14 @@ Digital Health Intelligence
 
   <div class="app-check-your-answers__contents">
     <dt class="app-check-your-answers__question">
-      Information for team
+      Message for team
     </dt>
     <dd class="app-check-your-answers__answer">
     {{ instructions }}
     </dd>
     <dd class="app-check-your-answers__change">
       <a href="#">
-        Change<span class="govuk-visually-hidden"> </span>
+        Edit<span class="govuk-visually-hidden"> </span>
       </a>
     </dd>
   </div>
@@ -75,15 +78,15 @@ Digital Health Intelligence
 
 
 
-<h2 class="govuk-heading-m">Submit and create your project</h2>
+<h2 class="govuk-heading-m"> </h2>
 
 <p>
-  By submitting these details you will create a project space that will be viewable by all members of your team.
+   
 </p>
 
 
 <div class="block-space" style="margin-top: 20px;">
-	<input class="govuk-button" type="submit" value="Submit">
+	<input class="govuk-button" type="submit" value="Finish">
 </div>
 
 </br>

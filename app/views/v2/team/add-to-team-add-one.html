@@ -15,23 +15,25 @@ Digital Health Intelligence
 
 <div class="govuk-form-group">
   <label class="govuk-label" for="team_member_two">
-    Type a name or email to add to your team
+    Enter the next email of the person you'd like to invite to the {{ team_name}} team. 
+
   </label>
     <input class="govuk-input govuk-!-width-one-half" id="team_member_two" name="team_member_two" type="text">
   </div>
 
   <div class="block-space">
 	<a class="govuk-button button-secondary" type="submit" href="add-to-team-add-another">
-		Add person
+		Add 
 	</a>
+
 </div>
 
 <table class="govuk-table">
-  <caption class="govuk-table__caption">People in {{ team_name }} team</caption>
+  <caption class="govuk-table__caption"> {{ team_name }}'s current team members:</caption>
   <thead class="govuk-table__head">
     <tr class="govuk-table__row">
       <th class="govuk-table__header" scope="col">Name</th>
-      <th class="govuk-table__header" scope="col">Email address</th>
+      <th class="govuk-table__header" scope="col">Email </th>
     </tr>
   </thead>
   <tbody class="govuk-table__body">
@@ -43,7 +45,7 @@ Digital Health Intelligence
 </table>
 
 <button type="submit" class="govuk-button">
-  Sumbit team
+  Create team
 </button>
 </br>
     </div>
