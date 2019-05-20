@@ -356,6 +356,7 @@ $govuk-global-styles: true;
   margin-top: -30px;
   padding: 100px 30px 20px 30px;
   margin-bottom: -30px;
+
   h2 {
     color: white;
   }
@@ -379,6 +380,35 @@ $govuk-global-styles: true;
     max-width: 200px;
   }
 }
+
+.project-bar {
+  background-color: #005EA5;
+  padding: 20px 10px 10px 30px;
+  margin-top: -30px;
+  min-height: 80px;
+  h2 {
+    color: white;
+    margin-bottom: 10px;
+  }
+
+  h3 {
+    color: white;
+    margin-bottom: 10px;
+  }
+  p {
+    color: white;
+    font-size: 18px;
+  }
+
+  a {
+    color: white;
+  }
+
+  img {
+    max-width: 200px;
+  }
+}
+
 
 .under-heading {
   font-size: 28px;
