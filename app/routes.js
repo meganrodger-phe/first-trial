@@ -163,3 +163,17 @@ res.render('v2/team/choose-team', {
 
 })
 });
+
+router.get('/v2/team/close-project', function (req, res) {
+for (var a in req.query) req.session[a] = req.query[a];
+res.render('v2/team/close-project');
+});
+
+router.get('/v2/team/project-closed', function (req, res) {
+for (var a in req.query) req.session[a] = req.query[a];
+res.render('v2/team/project-closed', {
+
+'close_comment' : req.session.close_comment,
+
+})
+});
