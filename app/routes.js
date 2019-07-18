@@ -204,6 +204,8 @@ res.render('v3/team/check-create-identifier', {
 'project_detail' : req.session.project_detail,
 'group_name' : req.session.group_name,
 'instructions' : req.session.instructions,
+'project_rationale' : req.session.project_rationale,
+'project_tag' : req.session.project_tag,
 
 })
 });
@@ -214,6 +216,48 @@ res.render('v3/team/project-created', {
 
 'identifier' : req.session.identifier,
 'group_name' : req.session.group_name,
+
+})
+});
+
+router.get('/v3/team/add-to-team', function (req, res) {
+for (var a in req.query) req.session[a] = req.query[a];
+res.render('v3/team/add-to-team', {
+
+'team_name' : req.session.team_name,
+
+})
+});
+
+router.get('/v3/team/add-to-team-add-one', function (req, res) {
+for (var a in req.query) req.session[a] = req.query[a];
+res.render('v3/team/add-to-team-add-one', {
+
+'team_name' : req.session.team_name,
+'member_one' : req.session.member_one,
+
+})
+});
+
+router.get('/v3/team/add-to-team-add-another', function (req, res) {
+for (var a in req.query) req.session[a] = req.query[a];
+res.render('v3/team/add-to-team-add-another', {
+
+'team_name' : req.session.team_name,
+'member_one' : req.session.member_one,
+'team_member_two' : req.session.team_member_two,
+
+})
+});
+
+router.get('/v3/team/team_created', function (req, res) {
+for (var a in req.query) req.session[a] = req.query[a];
+res.render('v3/team/team_created', {
+
+'team_name' : req.session.team_name,
+'member_one' : req.session.member_one,
+'team_member_two' : req.session.team_member_two,
+'identifier' : req.session.identifier,
 
 })
 });
@@ -258,6 +302,26 @@ for (var a in req.query) req.session[a] = req.query[a];
 res.render('v3/team/project-closed', {
 
 'close_comment' : req.session.close_comment,
+
+})
+});
+
+router.get('/v3/team/project-index-project-added', function (req, res) {
+for (var a in req.query) req.session[a] = req.query[a];
+res.render('v3/team/project-index-project-added', {
+
+'identifier' : req.session.identifier,
+'project_detail' : req.session.project_detail,
+
+})
+});
+
+router.get('/v3/team/project-space-progress', function (req, res) {
+for (var a in req.query) req.session[a] = req.query[a];
+res.render('v3/team/project-space-progress', {
+
+'identifier' : req.session.identifier,
+'project_detail' : req.session.project_detail,
 
 })
 });

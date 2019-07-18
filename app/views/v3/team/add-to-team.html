@@ -7,23 +7,25 @@ Digital Health Intelligence
 
 {% block content %}
 
-<form action="" method="get" class="form">
+<form action="add-to-team-add-one" method="get" class="form">
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-two-thirds">
 <a href="create-team" class="govuk-back-link">Back</a>
-<h1 class="govuk-heading-l">{{ team_name }}Current_01 team created</h1>
+<h1 class="govuk-heading-l">{{ team_name }} team created</h1>
 
 <div class="govuk-form-group">
   <label class="govuk-label" for="member_one">
-    Enter the email of the person you'd like to invite to the {{ team_name}} team. 
+    Enter the email of the person you'd like to invite to the {{ team_name}} team.
   </label>
+  <span id="national-insurance-number-hint" class="govuk-hint">
+  </span>
     <input class="govuk-input govuk-!-width-one-half" id="member_one" name="member_one" type="text">
   </div>
 
   <div class="block-space">
-	<a class="govuk-button button-secondary" type="submit" href="add-to-team-add-one">
-		Add 
-	</a>
+  <button type="submit" class="govuk-button button-secondary">
+    Add
+  </button>
 </div>
 
 
