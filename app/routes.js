@@ -177,3 +177,87 @@ res.render('v2/team/project-closed', {
 
 })
 });
+
+
+//Version 3 of the Prototype
+
+router.get('/v3/team/create-identifier', function (req, res) {
+for (var a in req.query) req.session[a] = req.query[a];
+res.render('v3/team/create-identifier');
+});
+
+
+router.get('/v3/team/add-instructions', function (req, res) {
+for (var a in req.query) req.session[a] = req.query[a];
+res.render('v3/team/add-instructions', {
+
+  'identifier' : req.session.identifier,
+})
+});
+
+
+router.get('/v3/team/check-create-identifier', function (req, res) {
+for (var a in req.query) req.session[a] = req.query[a];
+res.render('v3/team/check-create-identifier', {
+
+'identifier' : req.session.identifier,
+'project_detail' : req.session.project_detail,
+'group_name' : req.session.group_name,
+'instructions' : req.session.instructions,
+
+})
+});
+
+router.get('/v3/team/project-created', function (req, res) {
+for (var a in req.query) req.session[a] = req.query[a];
+res.render('v3/team/project-created', {
+
+'identifier' : req.session.identifier,
+'group_name' : req.session.group_name,
+
+})
+});
+
+router.get('/v3/team/project-space-start', function (req, res) {
+for (var a in req.query) req.session[a] = req.query[a];
+res.render('v3/team/project-space-start', {
+
+'identifier' : req.session.identifier,
+'project_detail' : req.session.project_detail,
+'group_name' : req.session.group_name,
+
+})
+});
+
+router.get('/v3/team/view-selected-material-empty', function (req, res) {
+for (var a in req.query) req.session[a] = req.query[a];
+res.render('v3/team/view-selected-material-empty', {
+
+'identifier' : req.session.identifier,
+'project_detail' : req.session.project_detail,
+
+})
+});
+
+router.get('/v3/team/choose-team', function (req, res) {
+for (var a in req.query) req.session[a] = req.query[a];
+res.render('v3/team/choose-team', {
+
+'identifier' : req.session.identifier,
+
+})
+});
+
+router.get('/v3/team/close-project', function (req, res) {
+for (var a in req.query) req.session[a] = req.query[a];
+res.render('v3/team/close-project');
+});
+
+router.get('/v3/team/project-closed', function (req, res) {
+for (var a in req.query) req.session[a] = req.query[a];
+res.render('v3/team/project-closed', {
+
+'close_comment' : req.session.close_comment,
+
+})
+});

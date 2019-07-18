@@ -1,0 +1,59 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Digital Health Intelligence
+{% endblock %}
+
+{% block content %}
+
+<form action="add-instructions" method="get" class="form">
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+<a href="" class="govuk-back-link">Back</a>
+<h1 class="govuk-heading-l">Choose which team will contribute to the {{ identifier }} project </h1>
+</br>
+<p> If you select an existing team, each member will receive an email inviting them to contribute to the new {{ identifier }} space.
+
+ </p>
+<form>
+  <fieldset class="govuk-fieldset">
+    <legend class="govuk-fieldset__heading" style="margin-bottom:15px;">
+      <h3 class="govuk-heading-s">Teams you can invite:</h3>
+    </legend>
+    <div class="multiple-choice--hod govuk-radios">
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="month-1" type="radio" name="group_name" value="Alcohol yearly report - Person 1, Person 2, Person 3, Person 4">
+        <label class="govuk-label govuk-radios__label" for="month-1"><strong>Alcohol yearly report</strong> - Person 1, Person 2, Person 3, Person 4</label>
+      </div>
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="month-2" type="radio" name="group_name" value="LKIS and LA team - Person 2, Person 4, Person 5, Person 6, Person 7">
+        <label class="govuk-label govuk-radios__label" for="month-2"><strong>LKIS and LA team</strong> - Person 2, Person 4, Person 5, Person 6, Person 7</label>
+      </div>
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="month-3" type="radio" name="group_name" value="Yearly report - Person 1, Person 2, Person 6, Person 8">
+        <label class="govuk-label govuk-radios__label" for="month-3"><strong>Yearly report</strong> - Person 1, Person 2, Person 6, Person 8</label>
+      </div>
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="month-4" type="radio" name="group_name" value="STP and PHE working group - Person 3, Person 4, Person 7, Person 9">
+        <label class="govuk-label govuk-radios__label" for="month-4"><strong>STP and PHE working group</strong> - Person 3, Person 4, Person 7, Person 9</label>
+      </div>
+    </div>
+  </fieldset>
+</form>
+
+
+
+</br>
+<p> You can also create a new team. You will need each member's name, email address and a unique name for the team.</p>
+<a href="create-team" style="font-size: 20px;">Create a new team</a></br>
+</br>
+</br>
+<button type="submit" class="govuk-button">
+  Continue
+</button>
+</br>
+    </div>
+</div>
+</form>
+{% endblock %}

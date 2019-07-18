@@ -1,0 +1,96 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Digital Health Intelligence
+{% endblock %}
+
+{% block content %}
+
+<form action="project-created" method="get" class="form">
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+<a href="" class="govuk-back-link">Back</a>
+<h1 class="govuk-heading-l">New project summary</h1>
+<p>
+ Before you finish creating {{ identifier }},
+ ensure your project details are correct.
+</p>
+<dl class="app-check-your-answers app-check-your-answers--short">
+  <div class="app-check-your-answers__contents">
+    <dt class="app-check-your-answers__question">
+      Project name
+    </dt>
+    <dd class="app-check-your-answers__answer">
+      {{ identifier }}
+    </dd>
+    <dd class="app-check-your-answers__change">
+      <a href="#">
+        Change<span class="govuk-visually-hidden"> project name</span>
+      </a>
+    </dd>
+  </div>
+
+  <div class="app-check-your-answers__contents">
+    <dt class="app-check-your-answers__question">
+      Project summary
+    </dt>
+    <dd class="app-check-your-answers__answer">
+      {{ project_detail }}
+    </dd>
+    <dd class="app-check-your-answers__change">
+      <a href="#">
+        Change<span class="govuk-visually-hidden"> summary</span>
+      </a>
+    </dd>
+  </div>
+
+  <div class="app-check-your-answers__contents">
+    <dt class="app-check-your-answers__question">
+      Team members
+    </dt>
+    <dd class="app-check-your-answers__answer">
+    {{ group_name }}
+    </dd>
+    <dd class="app-check-your-answers__change">
+      <a href="#">
+        Change<span class="govuk-visually-hidden"> Instructions for team</span>
+      </a>
+    </dd>
+  </div>
+
+
+  <div class="app-check-your-answers__contents">
+    <dt class="app-check-your-answers__question">
+      Message for team
+    </dt>
+    <dd class="app-check-your-answers__answer">
+    {{ instructions }}
+    </dd>
+    <dd class="app-check-your-answers__change">
+      <a href="#">
+        Change<span class="govuk-visually-hidden"> </span>
+      </a>
+    </dd>
+  </div>
+
+</dl>
+
+
+
+<h2 class="govuk-heading-m"> </h2>
+
+<p>
+
+</p>
+
+
+<div class="block-space" style="margin-top: 20px;">
+	<input class="govuk-button" type="submit" value="Create project">
+</div>
+
+</br>
+    </div>
+</div>
+</form>
+{% endblock %}

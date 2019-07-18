@@ -1,0 +1,33 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Digital Health Intelligence
+{% endblock %}
+
+{% block content %}
+
+<form action="add-to-team" method="get" class="form">
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+<a href="choose-team" class="govuk-back-link">Back</a>
+<h1 class="govuk-heading-l">Choose your team name</h1>
+
+<div class="govuk-form-group">
+  <label class="govuk-label" for="team_name">
+     The name will be the same for all team members. 
+
+  </label>
+  <span id="national-insurance-number-hint" class="govuk-hint">
+  </span>
+    <input class="govuk-input govuk-!-width-one-half" id="one-half" name="team_name" type="text">
+  </div>
+
+<button type="submit" class="govuk-button">
+  Continue
+</button>
+</br>
+    </div>
+</div>
+</form>
+{% endblock %}

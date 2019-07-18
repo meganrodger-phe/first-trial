@@ -1,0 +1,32 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Digital Health Intelligence
+{% endblock %}
+
+{% block content %}
+
+<form action="" method="get" class="form">
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+<a href="close-project" class="govuk-back-link">Back</a>
+<div class="govuk-box-highlight confirm-page new">
+  <span class="hod-checkmark move"></span>
+  <h2 class="govuk-heading-l">
+    Project {{ identifier }} closed
+  </h2>
+  <p>{{ identifier }}project has been closed with the closing comment:</br>
+  {{ close_comment }}</p>
+  <p>
+    The project will now be searchable in your team's archived projects. As you have selected the project to be XXX it will be searchable by XXX</p>
+</div>
+</br>
+
+<a href="project-index" style="font-size: 20px;">View all current projects</a></br>
+<a href="../historic/historic-start" style="font-size: 20px;">Search closed projects</a>
+
+    </div>
+</div>
+</form>
+{% endblock %}

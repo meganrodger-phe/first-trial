@@ -1,0 +1,37 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Digital Health Intelligence
+{% endblock %}
+
+{% block content %}
+
+<form action="" method="get" class="form">
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+<a href="create-team" class="govuk-back-link">Back</a>
+<h1 class="govuk-heading-l">{{ team_name }}Current_01 team created</h1>
+
+<div class="govuk-form-group">
+  <label class="govuk-label" for="member_one">
+    Enter the email of the person you'd like to invite to the {{ team_name}} team. 
+  </label>
+    <input class="govuk-input govuk-!-width-one-half" id="member_one" name="member_one" type="text">
+  </div>
+
+  <div class="block-space">
+	<a class="govuk-button button-secondary" type="submit" href="add-to-team-add-one">
+		Add 
+	</a>
+</div>
+
+
+<button type="submit" class="govuk-button">
+  Create team
+</button>
+</br>
+    </div>
+</div>
+</form>
+{% endblock %}

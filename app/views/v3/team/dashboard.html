@@ -1,0 +1,134 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Digital Health Intelligence
+{% endblock %}
+
+{% block content %}
+
+<form action="how-doing" method="get" class="form">
+  <div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+<a href="how-doing" class="govuk-back-link">Back</a>
+<h1 class="govuk-heading-l" style="margin-bottom: 20px;">Dashboard of indicators</h1>
+<p>Dashboard of indicators selected by your team<p>
+
+  <div id="openModal" class="modalDialog">
+  	<div>
+  		<a href="#close" title="Close" class="close">X</a>
+  		<h2 class="govuk-heading-s" style="margin-bottom: 5px; margin-top: 6px;">Indicator tag</h2>
+      <p>Admission episodes for alcohol-related conditions (Narrow)</p>
+  		<p><strong>Tagged by:</strong> Person 8</p>
+      <p><strong>Tagged for:</strong> Alcohol treatment</p>
+      <p><strong>Summary:</strong> This indicator is particularly important because it is a particular spike that happened following a last treatment change</p>
+  		<p><span style="background-color:#005ea5; color: white; padding: 5px 8px 5px 8px;">financial</span></p>
+  	</div>
+  </div>
+
+  <div id="openModal_02" class="modalDialog">
+    <div>
+      <a href="#close" title="Close" class="close">X</a>
+      <h2 class="govuk-heading-s" style="margin-bottom: 10px; margin-top: 6px;">Indicator tag</h2>
+      <p>Admission episodes for alcohol-specific conditions - Under 18s</p>
+      <p><strong>Tagged by:</strong> Person 8</p>
+      <p><strong>Tagged for:</strong> Alcohol treatment</p>
+      <p><strong>Summary:</strong> This indicator is particularly important because it is a particular spike that happened following a last treatment change</p>
+      <p><span style="background-color:#2e358b; color: white; padding: 5px 8px 5px 8px; margin-right: 5px;">people</span><span style="background-color: #dee0e2; padding: 5px 8px 5px 8px;">prevention</span></p>
+    </div>
+  </div>
+
+  <div id="openModal_03" class="modalDialog">
+    <div>
+      <a href="#close" title="Close" class="close">X</a>
+      <h2 class="govuk-heading-s" style="margin-bottom: 10px; margin-top: 6px;">Indicator tag</h2>
+      <p>Alcohol-specific mortality</p>
+      <p><strong>Tagged by:</strong> Person 8</p>
+      <p><strong>Tagged for:</strong> Alcohol treatment</p>
+      <p><strong>Summary:</strong> This indicator is particularly important because it is a particular spike that happened following a last treatment change</p>
+      <p><span style="background-color:#dee0e2; padding: 5px 8px 5px 8px;">treatment</span></p>
+    </div>
+  </div>
+
+
+</br>
+    <table class="govuk-table">
+      <caption class="govuk-table__caption">Indicators selected for this area</caption>
+      <thead class="govuk-table__head">
+        <tr class="govuk-table__row">
+          <th class="govuk-table__header" scope="col">Indicator</th>
+          <th class="govuk-table__header" scope="col">Amount</th>
+          <th class="govuk-table__header" scope="col">Compared to benchmark</th>
+          <th class="govuk-table__header" scope="col"></th>
+          <th class="govuk-table__header" scope="col">Select for project</th>
+        </tr>
+      </thead>
+      <tbody class="govuk-table__body">
+        <tr class="govuk-table__row">
+          <td class="govuk-table__cell" scope="row">Admission episodes for alcohol-related conditions (Narrow)</td>
+          <td class="govuk-table__cell">560 in 100,000</td>
+          <td class="govuk-table__cell">Worse</td>
+          <td class="govuk-table__cell"><a href="#openModal">Tag</a><div id="openModal" class="modalDialog"><div></div></div></td>
+          <td class="govuk-table__cell"><div class="block-space" style="display: inline-block; margin-top: 25px;"><a class="govuk-button button-secondary" type="submit">
+		select</a></div></td>
+        </tr>
+        <tr class="govuk-table__row">
+          <td class="govuk-table__cell" scope="row"><div class="indicator">Admission episodes for alcohol-related conditions (Broad)</div></td>
+          <td class="govuk-table__cell">2678 in 100,000</td>
+          <td class="govuk-table__cell">Same</td>
+          <td class="govuk-table__cell"></td>
+          <td class="govuk-table__cell"><div class="block-space" style="display: inline-block; margin-top: 25px;"><a class="govuk-button button-secondary" type="submit">
+		select</a></div></td>
+        </tr>
+        <tr class="govuk-table__row">
+          <td class="govuk-table__cell" scope="row">Admission episodes for alcohol-specific conditions</td>
+          <td class="govuk-table__cell">807 in 100,000</td>
+          <td class="govuk-table__cell">Worse</td>
+          <td class="govuk-table__cell"></td>
+          <td class="govuk-table__cell"><div class="block-space" style="display: inline-block; margin-top: 25px;"><a class="govuk-button button-secondary" type="submit">
+		select</a></div></td>
+        </tr>
+        <tr class="govuk-table__row">
+          <td class="govuk-table__cell" scope="row">Admission episodes for alcohol-specific conditions - Under 18s</td>
+          <td class="govuk-table__cell">13.8 in 100,000</td>
+          <td class="govuk-table__cell">Better</td>
+          <td class="govuk-table__cell"><a href="#openModal_02">Tag</a><div id="openModal_02" class="modalDialog"><div></div></div></td>
+          <td class="govuk-table__cell"><div class="block-space" style="display: inline-block; margin-top: 25px;"><a class="govuk-button button-secondary" type="submit" >
+		select</a></div></td>
+        </tr>
+        <tr class="govuk-table__row">
+          <td class="govuk-table__cell" scope="row">Alcohol-related mortality</td>
+          <td class="govuk-table__cell">44.6 in 100,000</td>
+          <td class="govuk-table__cell">Worse</td>
+          <td class="govuk-table__cell"></td>
+          <td class="govuk-table__cell"><div class="block-space" style="display: inline-block; margin-top: 25px;"><a class="govuk-button button-secondary" type="submit">
+		select</a></div></td>
+        </tr>
+        <tr class="govuk-table__row">
+          <td class="govuk-table__cell" scope="row">Alcohol-specific mortality</td>
+          <td class="govuk-table__cell">13 in 100,000</td>
+          <td class="govuk-table__cell">Same</td>
+          <td class="govuk-table__cell"><a href="#openModal_03">Tag</a><div id="openModal_03" class="modalDialog"><div></div></div></td>
+          <td class="govuk-table__cell"><div class="block-space" style="display: inline-block; margin-top: 25px;"><a class="govuk-button button-secondary" type="submit">
+		select</a></div></td>
+        </tr>
+      </tbody>
+    </table>
+</div>
+
+<div class="govuk-grid-column-one-third">
+    <div class="project-info">
+      <h2 class="govuk-heading-m">Alcohol-recom-01-03-19</h2>
+      <h3 class="govuk-heading-s">Summary</h3>
+      <p>Our service contract is ending, and I have become aware of a new model of service delivery that I think will be effective. Can we collect together information about this and put together a case for funding a new experimental model.</p>
+      <h3 class="govuk-heading-s">Map of area selected:</h3>
+      <img src="/public/images/map-of-area.png" style="margin-bottom: 30px;">
+
+      <h3 class="govuk-heading-s">Shortlisted information:</h3>
+      <a href="view-selected-material">View shortlisted material here</a>
+    </div>
+  </div>
+</div>
+
+</form>
+{% endblock %}
