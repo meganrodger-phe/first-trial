@@ -1,0 +1,68 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Digital Health Intelligence
+{% endblock %}
+
+{% block content %}
+
+<form action="choose-team" method="get" class="form">
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+<a href="project-index" class="govuk-back-link">Back</a>
+<h1 class="govuk-heading-l">Create a new project </h1>
+
+<p></p>
+
+<div class="govuk-form-group">
+  <label class="govuk-label" for="identifier">
+   Project name
+  </label>
+  <span id="identifier-hint" class="govuk-hint">
+    Choose something you and your team can easily identify.
+  </span>
+  <input class="govuk-input" id="identifier" name="identifier" type="text">
+</div>
+
+<div class="govuk-form-group">
+  <label class="govuk-label" for="project_rationale">
+    Rationale
+  </label>
+  <span id="project_rationale" class="govuk-hint">
+ Explanation of project for the team
+  </span>
+  <textarea class="govuk-textarea" id="project_rationale" name="project_rationale" rows="5" aria-describedby="project-rationale-hint"></textarea>
+</div>
+
+<div class="govuk-form-group">
+  <label class="govuk-label" for="project-detail">
+    Summary
+  </label>
+  <span id="project-detail-hint" class="govuk-hint">
+ The project summary will be visible to anyone who views it. You can update this any time.
+  </span>
+  <textarea class="govuk-textarea" id="project_detail" name="project_detail" rows="5" aria-describedby="project-detail-hint"></textarea>
+</div>
+
+<div class="govuk-form-group">
+  <label class="govuk-label" for="project-tag">
+    Tags
+  </label>
+  <span id="project-tag-hint" class="govuk-hint">
+ Tag your project with key words that will make it searchable
+  </span>
+  <textarea class="govuk-textarea" id="project_tag" name="project_tag" rows="2" aria-describedby="project-tag-hint"></textarea>
+</div>
+
+
+
+<div class="block-space">
+	<input class="govuk-button" type="submit" value="Continue">
+</div>
+
+</br>
+    </div>
+</div>
+</form>
+{% endblock %}

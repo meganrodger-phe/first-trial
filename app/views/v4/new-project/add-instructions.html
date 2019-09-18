@@ -1,0 +1,37 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Digital Health Intelligence
+{% endblock %}
+
+{% block content %}
+
+<form action="check-create-identifier" method="get" class="form">
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+<a href="" class="govuk-back-link">Back</a>
+<h1 class="govuk-heading-l"> Include additional information to your
+ </br>{{ identifier }} team invite</h1>
+
+<div class="govuk-form-group">
+  <label class="govuk-label" for="instructions">
+  Your team will receive an email to join {{ identifier }}. Use this space to include additional useful information to be sent with the invitation.
+  </label>
+  <span id="project-detail-hint" class="govuk-hint">
+
+  </span>
+  <textarea class="govuk-textarea" id="instructions" name="instructions" rows="5" aria-describedby="project-detail-hint"></textarea>
+</div>
+
+
+
+<div class="block-space">
+	<input class="govuk-button" type="submit" value="Continue">
+</div>
+
+</br>
+    </div>
+</div>
+</form>
+{% endblock %}

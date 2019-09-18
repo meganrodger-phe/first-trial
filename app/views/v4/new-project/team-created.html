@@ -1,0 +1,47 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Digital Health Intelligence
+{% endblock %}
+
+{% block content %}
+
+<form action="add-instructions" method="get" class="form">
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+<a href="#" class="govuk-back-link">Back</a>
+<h1 class="govuk-heading-l">{{ team_name }} team created</h1>
+
+
+<table class="govuk-table">
+  <caption class="govuk-table__caption">{{ team_name }} Team members</caption>
+  <thead class="govuk-table__head">
+    <tr class="govuk-table__row">
+      <th class="govuk-table__header" scope="col">Name</th>
+      <th class="govuk-table__header" scope="col">Email address</th>
+    </tr>
+  </thead>
+  <tbody class="govuk-table__body">
+    <tr class="govuk-table__row">
+      <td class="govuk-table__cell" scope="row">{{ member_one }}</td>
+      <td class="govuk-table__cell">{{ member_one }}@southwark.gov.uk</td>
+    </tr>
+    <tr class="govuk-table__row">
+      <td class="govuk-table__cell" scope="row">{{ team_member_two }}</td>
+      <td class="govuk-table__cell">{{ team_member_two }}@southwark.gov.uk</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Continue to add this team to {{ identifier }} project</p>
+
+<div class="block-space">
+	<input class="govuk-button" type="submit" value="Continue">
+</div>
+
+</br>
+    </div>
+</div>
+</form>
+{% endblock %}

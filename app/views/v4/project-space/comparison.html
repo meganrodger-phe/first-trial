@@ -1,0 +1,168 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Digital Health Intelligence
+{% endblock %}
+
+{% block content %}
+
+<form action="how-doing" method="get" class="form">
+  <div class="govuk-grid-row">
+    <div class="project-bar">
+    <div class="govuk-grid-column-two-thirds">
+  <h2 class="govuk-heading-s">Alcohol-recom-01-03-19</h2>
+  <div class="unfold-summary" style="background-color: #005EA5;">
+  <details class="govuk-details" style="color: white; font-size: 16px;">
+<div class="govuk-details__text" style="color: white;">
+  Our service contract is ending, and I have become aware of a new model of service delivery that I think will be effective. Can we collect together information about this and put together a case for funding a new experimental model.
+</div>
+</details>
+</div>
+</div>
+<div class="govuk-grid-column-one-third">
+<h3 class="govuk-heading-s">Shortlisted information:</h3>
+<a href="view-selected-material">View shortlisted material here</a>
+</div>
+</div>
+</div>
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <div class="govuk-breadcrumbs">
+        <ol class="govuk-breadcrumbs__list">
+          <li class="govuk-breadcrumbs__list-item">
+            <a class="govuk-breadcrumbs__link" href="project-index">All projects</a>
+          </li>
+          <li class="govuk-breadcrumbs__list-item">
+            <a class="govuk-breadcrumbs__link" href="project-space-progress">Project space</a>
+          </li>
+          <li class="govuk-breadcrumbs__list-item">
+            <a class="govuk-breadcrumbs__link" href="how-doing">Data saved in project space</a>
+          </li>
+          <li class="govuk-breadcrumbs__list-item">
+            <a class="govuk-breadcrumbs__link" aria-current="page">Dashboard of indicators</a>
+          </li>
+        </ol>
+      </div>
+
+      <div id="openModal" class="modalDialog">
+        <div>
+          <a href="#close" title="Close" class="close">X</a>
+          <h2 class="govuk-heading-s" style="margin-bottom: 5px; margin-top: 6px;">Indicator tag</h2>
+          <p>Admission episodes for alcohol-realted conditions</p>
+          <p><strong>Tagged by:</strong> Person 8</p>
+          <p><strong>Tagged for:</strong> Alcohol</p>
+          <p><strong>Summary:</strong> This indicator is abnormally high as there is the highest concentration of bars in this area.</p>
+          <p><span style="background-color:#dee0e2; padding: 5px 8px 5px 8px;">prevention</span></p>
+        </div>
+      </div>
+
+<a href="how-doing" class="govuk-back-link">Back</a>
+<h1 class="govuk-heading-l" style="margin-bottom: 20px;">Dashboard of indicators for the selected area</h1>
+<p style="margin-bottom: 40px;">Indicators shown below have been added by your team from the area selected on the map below.<p>
+
+  <details class="govuk-details" style="margin-left: -30px;" open>
+  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      <span style="font-weight: bold;">Map of selected area</span>
+    </span>
+  </summary>
+  <div class="govuk-details__text">
+   <img src="/public/images/map-of-area.png" style="max-width: 400px;">
+  </div>
+</details>
+
+</div>
+</div>
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-full">
+
+  <table class="govuk-table">
+    <thead class="govuk-table__head">
+      <tr class="govuk-table__row">
+        <th class="govuk-table__header" scope="col">Indicators chosen</br><span style="font-weight: normal; font-size: 16px;">numbers out of 100,000</span></th>
+        <th class="govuk-table__header" scope="col">SE5 7 - area selected on map</br></th>
+        <th class="govuk-table__header" scope="col">SE5 - area selected </br><a href="">view here</a></th>
+        <th class="govuk-table__header" scope="col">Southwark</th>
+        <th class="govuk-table__header" scope="col">England wide</th>
+        <th class="govuk-table__header" scope="col">Statistical neighbour</br><a href="">choose</a></th>
+        <th class="govuk-table__header" scope="col"></th>
+      </tr>
+    </thead>
+    <tbody class="govuk-table__body">
+      <tr class="govuk-table__row">
+        <th class="govuk-table__header" scope="row">Admission episodes for alcohol-related conditions (Narrow)</th>
+        <td class="govuk-table__cell">476</br></br>Worse</td>
+        <td class="govuk-table__cell">365</br></br>Same</td></td>
+        <td class="govuk-table__cell">381</br><a href="#openModal">comment</a><div id="openModal" class="modalDialog"><div></div></div></br>Same</td>
+        <td class="govuk-table__cell">421</br></br>Same</td>
+        <td class="govuk-table__cell">456</br></br>Same</td>
+        <td class="govuk-tabel__cell"><div class="block-space" style="display: inline-block; margin-top: 25px;"><a class="govuk-button button-secondary" type="submit" >
+  shortlist</a></div></td>
+      </tr>
+      <tr class="govuk-table__row">
+        <th class="govuk-table__header" scope="row">Admission episodes for alcohol-related conditions (Broad)</th>
+        <td class="govuk-table__cell">53</br><a href="" style="color: blue;">comment</a></br>Worse</td>
+        <td class="govuk-table__cell">42</br></br>Same</td>
+        <td class="govuk-table__cell">46</br></br>Worse</td>
+        <td class="govuk-table__cell">48</br></br>Same</td>
+        <td class="govuk-table__cell">47</br></br>Same</td>
+        <td class="govuk-tabel__cell"><div class="block-space" style="display: inline-block; margin-top: 25px;"><a class="govuk-button button-secondary" type="submit" href="add-to-shortlist" style="color: black;">
+  shortlist</a></div></td>
+      </tr>
+      <tr class="govuk-table__row">
+        <th class="govuk-table__header" scope="row">Admission episodes for alcohol-specific conditions</th>
+        <td class="govuk-table__cell">68</br></br>Worse</td>
+        <td class="govuk-table__cell">73</br></br>Same</td>
+        <td class="govuk-table__cell">63</br></br>Same</td>
+        <td class="govuk-table__cell">64</br></br>Same</td>
+        <td class="govuk-table__cell">68</br></br>Same</td>
+        <td class="govuk-tabel__cell"><div class="block-space" style="display: inline-block; margin-top: 25px;"><a class="govuk-button button-secondary" type="submit">
+  shortlist</a></div></td>
+      </tr>
+      <tr class="govuk-table__row">
+        <th class="govuk-table__header" scope="row">Alcohol-related mortality</th>
+        <td class="govuk-table__cell">24</br></br>Same</td>
+        <td class="govuk-table__cell">18</br></br>Same</td>
+        <td class="govuk-table__cell">17<a href="" style="color: blue;"></br>comment</a></br>Same</td>
+        <td class="govuk-table__cell">26</br></br>Same</td>
+        <td class="govuk-table__cell">20</br></br>Same</td>
+        <td class="govuk-tabel__cell"><div class="block-space" style="display: inline-block; margin-top: 25px;"><a class="govuk-button button-secondary" type="submit">
+  shortlist</a></div></td>
+      </tr>
+    </tbody>
+  </table>
+  <a href="visualisations" style="font-size: 19px;">View this data in visualisations</a>
+</div>
+<div class="govuk-grid-row-column-one-third">
+
+</div>
+<!--
+<div class="govuk-grid-row-one-third">
+  <div class="project-info">
+    <h2 class="govuk-heading-m">Alcohol-recom-01-03-19</h2>
+    <div class="unfold-summary">
+    <details class="govuk-details" style="margin-bottom: 15px;">
+  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      Summary
+    </span>
+  </summary>
+  <div class="govuk-details__text">
+    Our service contract is ending, and I have become aware of a new model of service delivery that I think will be effective. Can we collect together information about this and put together a case for funding a new experimental model.
+  </div>
+</details>
+</div>
+    <h3 class="govuk-heading-s">Map of area selected:</h3>
+    <img src="/public/images/map-of-area.png" style="margin-bottom: 30px;">
+
+    <h3 class="govuk-heading-s">Shortlisted information:</h3>
+    <a href="view-selected-material">View shortlisted material here</a>
+  </div>
+  </div>
+  !-->
+</div>
+
+</form>
+{% endblock %}

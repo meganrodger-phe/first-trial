@@ -1,0 +1,37 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Digital Health Intelligence
+{% endblock %}
+
+{% block content %}
+
+<form action="/v1/historic-start" method="get" class="form">
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+<h1 class="govuk-heading-l">Digital Health Intelligence tool</h1>
+
+<p>This tool will help you find and package public health data and evidence. It lets you collect data from Fingertips and other PHE databases into a workspace that colleagues can contribute to or view.</p>
+<p>You and your team can search and add tags, notes and context to the data you find. You’ll also be able to see what other teams working with the same data have tagged or have historically found useful. This will help you share knowledge, build on existing best practice and save time when packaging information.</p>
+<!--<p>When</br>
+   why</br></p>!-->
+  <h2 class="govuk-heading-m">Sign-in to start using the tool</h2>
+
+<a href="sign-in-2" role="button" draggable="false" class="govuk-button govuk-button--start">
+  Sign in
+</a>
+</br>
+<a href="" style="font-size: 18px;">Create your account</a>
+</br>
+
+<h2 class="govuk-heading-m" style="margin-top: 30px; ">Search for data and evidence</h2>
+
+<p>You can also search and browse all the data as a guest without registering, but you won’t be able to tag data or package it into projects.</p>
+
+<div class="second-button" style="display: inline-block; margin-top: 15px;"><a class="govuk-button button-secondary" type="submit" href="search/search-start">
+Search data as a guest</a></div>
+
+    </div>
+</form>
+{% endblock %}
