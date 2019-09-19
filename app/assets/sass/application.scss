@@ -468,3 +468,21 @@ $govuk-global-styles: true;
   padding: 15px;
   min-height: 380px;
 }
+
+.hacked-check {
+  float: left;
+  margin-right: 35px;
+}
+
+.profile-filters {
+  float: left;
+  margin-right: 30px;
+}
+.benchmark-key {
+  float: left;
+  margin-right: 30px;
+  max-width: 150px;
+  p {
+    font-size: 16px;
+  }
+}

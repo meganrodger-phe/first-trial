@@ -29,11 +29,21 @@
   <div class="govuk-grid-row">
     <div class="govuk-grid-two-thirds">
 <a href="" class="govuk-back-link">Back</a>
+<div class="govuk-breadcrumbs">
+  <ol class="govuk-breadcrumbs__list">
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="search-start-data-alt">Search data</a>
+    </li>
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" aria-current="page">Search from profile or indicator</a>
+    </li>
+  </ol>
+</div>
 <h1 class="govuk-heading-l">Search for indicators</h1>
 <p>Find an indicator or build a bespoke dashboard of indicators</p>
-<h2 class="govuk-heading-m">Choose a profile</h2>
+</br>
 <div class="form-group">
-<label class="govuk-label" for="sort" style="font-weight: bold;">Profile</label>
+<label class="govuk-label" for="sort" style="font-weight: bold;">Choose a profile</label>
 <select class="govuk-select" id="sort" name="sort" style="width: 50%; background-color: white;">
 <option>Choose a profile</option>
 <option>Cardiovascular</option>
@@ -47,21 +57,20 @@
 </select>
 </div>
 </br></br>
-<a class="govuk-button button-secondary" type="submit" href="add-to-shortlist" style="color: black;">View profile</a>
+<a class="govuk-button button-secondary" type="submit" href="selected-profile" style="color: black;">View profile</a>
 
-<h2 class="govuk-heading-m">Or search by a key term</h2>
 <div class="govuk-form-group">
   <label class="govuk-label" for="width-20" style="padding: 10px 0px 5px 0px; margin: 0;">
-      <strong>Search by project name</strong>
+      <strong>Search for indicators by a key term</strong>
     </label>
     <input class="govuk-input govuk-input--width-20" id="width-20" name="width-20" type="text">
   </div>
-  <a class="govuk-button button-secondary" type="submit" href="add-to-shortlist" style="color: black;">Search</a>
+  <a class="govuk-button button-secondary" type="submit" href="indicator-search-results" style="color: black;">Search</a>
 
   <h2 class="govuk-heading-m">Or access all data via API</h2>
   <p>You can download all public health data in either JSON or CSV formats via the DHI API</p>
 
-  <a href="">View API information</a>
+  <a href="" class="govuk-link" style="font-size: 19px;">View API information</a>
   </div>
 </div>
 

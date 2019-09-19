@@ -7,7 +7,7 @@
 
 {% block content %}
 
-<form action="" method="get" class="form">
+<form action="area-selected-options" method="get" class="form">
   <div class="govuk-grid-row">
     <div class="project-bar">
     <div class="govuk-grid-column-two-thirds">
@@ -28,19 +28,87 @@
 </div>
 
 
-  <div class="govuk-grid-row">
-    <div class="govuk-grid-two-thirds">
+<div class="govuk-grid-row">
+<div class="govuk-grid-column-one-third">
 <a href="" class="govuk-back-link">Back</a>
 <h1 class="govuk-heading-m">Search for data by area</h1>
-<h2 class="govuk-heading-s">Choose an area</h2>
+<p>Select an area from the map or choose an area</p>
 
-<h2 class="govuk-heading-s">Type of area</h2>
+<div class="govuk-form-group">
+<label class="govuk-label" for="width-20">
+  Find an area
+</label>
+<input class="govuk-input govuk-input--width-20" id="width-20" name="width-20" type="text">
+</div>
+<div class="form-group">
+<label class="govuk-label" for="sort">Type of area</label>
+<select class="govuk-select" id="sort" name="sort";>
+<option>Choose an area</option>
+<option>Cardiovascular</option>
+<option>all</option>
+<option>the</option>
+<option>profiles</option>
+<option>here</option>
+<option>.</option>
+<option>.</option>
+<option>.</option>
+</select>
+</div>
+</br>
+<a class="govuk-button button-secondary" type="submit" href="" style="color: black;">Select for area</a>
 
-<h2 class="govuk-heading-s">Choose areas to explore</h2>
-<a class="govuk-button button-secondary" type="submit" href="add-to-shortlist" style="color: black;">Search</a>
 
+<h2 class="govuk-heading-s">
+  Choose area(s) to explore:</h2>
+  <div class="area-results" style="border: solid 2px; padding: 10px;">
+    <table class="govuk-table">
+      <thead class="govuk-table__head">
+        <tr class="govuk-table__row">
+          <th scope="col" class="govuk-table__header">Areas</th>
+        </tr>
+      </thead>
+      <tbody class="govuk-table__body">
+        <tr class="govuk-table__row">
+          <td class="govuk-table__cell">MSOA 2011: Oxford 003 (E08737282)</td>
+        </tr>
+        <tr class="govuk-table__row">
+          <td class="govuk-table__cell">MSOA 2011: Oxford 003 (E08737282)</td>
+        </tr>
+        <tr class="govuk-table__row">
+          <td class="govuk-table__cell">MSOA 2011: Oxford 003 (E08737282)</td>
+        </tr>
+        <tr class="govuk-table__row">
+          <td class="govuk-table__cell">MSOA 2011: Oxford 003 (E08737282)</td>
+        </tr>
+        <tr class="govuk-table__row">
+          <td class="govuk-table__cell">MSOA 2011: Oxford 003 (E08737282)</td>
+        </tr>
+        <tr class="govuk-table__row">
+          <td class="govuk-table__cell">MSOA 2011: Oxford 003 (E08737282)</td>
+        </tr>
+        <tr class="govuk-table__row">
+          <td class="govuk-table__cell">MSOA 2011: Oxford 003 (E08737282)</td>
+        </tr>
+        <tr class="govuk-table__row">
+          <td class="govuk-table__cell">MSOA 2011: Oxford 003 (E08737282)</td>
+        </tr>
+      </tbody>
+    </table>
 
   </div>
+</br>
+  <button class="govuk-button button-secondary" data-module="govuk-button">
+  Continue to selection
+  </button>
+
+
+
+</div>
+<div class="govuk-grid-column-two-thirds">
+  <div class="map-image" style="width=100%; height: auto; overflow: hidden;">
+  <img src="../../public/images/map-first.png">
+</div>
+</div>
 </div>
 
 <!--

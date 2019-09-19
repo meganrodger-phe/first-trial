@@ -7,7 +7,7 @@
 
 {% block content %}
 
-<form action="" method="get" class="form">
+<form action="sub-profile-view" method="get" class="form">
   <div class="govuk-grid-row">
     <div class="project-bar">
     <div class="govuk-grid-column-two-thirds">
@@ -31,8 +31,44 @@
   <div class="govuk-grid-row">
     <div class="govuk-grid-two-thirds">
 <a href="" class="govuk-back-link">Back</a>
-<h1 class="govuk-heading-l">Name of profile</h1>
+
+<div class="govuk-breadcrumbs">
+  <ol class="govuk-breadcrumbs__list">
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="profile-or-indicator">Search data</a>
+    </li>
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="profile-or-indicator">Search indicators</a>
+    </li>
+    <li class="govuk-breadcrumbs__list-item" aria-current="page">Cardiovascular disease</li>
+  </ol>
+</div>
+
+<h1 class="govuk-heading-l">Cardiovascular disease</h1>
+<div class="form-group">
+<label class="govuk-label" for="sort" style="font-weight: bold;">Choose a subdomain</label>
+<select class="govuk-select" id="sort" name="sort" style="width: 50%; background-color: white;">
+<option>Choose a subdomain</option>
+<option>Risk factors</option>
+<option>all</option>
+<option>the</option>
+<option>subdomains</option>
+<option>here</option>
+<option>.</option>
+<option>.</option>
+<option>.</option>
+</select>
+</div>
+</br>
+
+<button class="govuk-button" data-module="govuk-button">
+  Load indicators
+</button>
+
+<h2 class="govuk-heading-m">Information about the profile</h2>
 <p>filter box and all indicators below</p>
+<h2 class="govuk-heading-m">Recent updates</h2>
+<p>What has been changed and added to this profile and why is that relevant</p>
   </div>
 </div>
 
