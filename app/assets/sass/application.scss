@@ -397,7 +397,7 @@ $govuk-global-styles: true;
   background-color: #005EA5;
   padding: 20px 10px 10px 30px;
   margin-top: -30px;
-  min-height: 80px;
+  min-height: 55px;
   margin-left: 15px;
   margin-right: 15px;
   h2 {
@@ -466,7 +466,7 @@ $govuk-global-styles: true;
 .data-menu {
   background-color: #D8D8D8;
   padding: 15px;
-  min-height: 380px;
+  min-height: 220px;
 }
 
 .hacked-check {
@@ -478,11 +478,134 @@ $govuk-global-styles: true;
   float: left;
   margin-right: 30px;
 }
-.benchmark-key {
+
+.benchmark-key-s {
   float: left;
   margin-right: 30px;
   max-width: 150px;
   p {
     font-size: 16px;
+  }
+  p::before {
+    content: 's';
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    -moz-border-radius: 17.5px;
+    -webkit-border-radius: 17.5px;
+    border-radius: 17.5px;
+    background-color: #FFBB06;
+    margin-left: 10px;
+  }
+}
+
+
+.benchmark-key-g {
+  float: left;
+  margin-right: 30px;
+  max-width: 150px;
+
+  p {
+    font-size: 16px;
+  }
+
+  p::before {
+  content: 'g';
+  color: white;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  -moz-border-radius: 17.5px;
+  -webkit-border-radius: 17.5px;
+  border-radius: 17.5px;
+  background-color: #1C9331;
+  margin-left: 10px;
+}}
+
+.benchmark-key-w {
+  float: left;
+  margin-right: 30px;
+  max-width: 150px;
+  p {
+    font-size: 16px;
+  }
+
+  p::before {
+    content: 'w';
+    color: white;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    -moz-border-radius: 17.5px;
+    -webkit-border-radius: 17.5px;
+    border-radius: 17.5px;
+    background-color: #D51C1C;
+    margin-left: 10px;
+  }
+}
+
+
+.table-clickable tbody tr:hover {
+  background-color: #F8F8F8;
+  cursor: pointer;
+}
+
+$selected-colour: #FFECC7;
+
+.table-clickable tbody tr.checked {
+  background-color: #FFECC7;
+}
+
+.table-clickable tbody tr.checked:hover {
+  background-color: darken(#FFECC7, 5%);
+}
+
+.table-clickable {
+  .multiple-choice--hod {
+  padding: 0.9em 0 0 1.05263em;
+  margin: 0;
+
+  }
+}
+
+.icon-table {
+
+  p.this::after {
+     content: 's';
+     display: inline-block;
+     width: 30px;
+     height: 30px;
+     -moz-border-radius: 17.5px;
+     -webkit-border-radius: 17.5px;
+     border-radius: 17.5px;
+     background-color: #FFBB06;
+     margin-left: 10px;
+  }
+
+
+  p.that::after {
+     content: 'g';
+     color: white;
+     display: inline-block;
+     width: 30px;
+     height: 30px;
+     -moz-border-radius: 17.5px;
+     -webkit-border-radius: 17.5px;
+     border-radius: 17.5px;
+     background-color: #1C9331;
+     margin-left: 10px;
+  }
+
+  p.and::after {
+     content: 'w';
+     color: white;
+     display: inline-block;
+     width: 30px;
+     height: 30px;
+     -moz-border-radius: 17.5px;
+     -webkit-border-radius: 17.5px;
+     border-radius: 17.5px;
+     background-color: #D51C1C;
+     margin-left: 10px;
   }
 }
