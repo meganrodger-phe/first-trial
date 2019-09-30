@@ -1,0 +1,148 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Digital Health Intelligence
+{% endblock %}
+
+{% block content %}
+
+<form action="" method="get" class="form">
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+<a href="what-should" class="govuk-back-link">Back</a>
+<h1 class="govuk-heading-l">Search all tagged best practice</h1>
+</div>
+</div>
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-full">
+
+<p>Search through the Public Health library to find best practice. Some of these have been approved by Public Health England or have been tagged as useful for particular preventions or treatments.</p>
+
+<div class="filter-box">
+  <div class="govuk-grid-row">
+      <div class="govuk-grid-column-one-third">
+        <h3 class="govuk-heading-s" style="padding-bottom: 8px; padding-top: 15px;">
+          Search best practice by:
+        </h3>
+
+          <legend>
+            <h3 class="govuk-heading-s" style="margin-top: 0px; margin-bottom: 10px; ">Good for...</h3>
+          </legend>
+
+          <div class="govuk-form-group">
+            <fieldset class="govuk-fieldset" aria-describedby="waste-hint">
+              <div class="multiple-choice--hod">
+                <div class="govuk-checkboxes__item">
+                  <input class="govuk-checkboxes__input" id="waste-1" name="waste" type="checkbox" value="carcasses">
+                  <label class="govuk-label govuk-checkboxes__label" for="waste-1">
+                    Financial impact
+                  </label>
+                </div>
+                <div class="govuk-checkboxes__item">
+                  <input class="govuk-checkboxes__input" id="waste-2" name="waste" type="checkbox" value="mines">
+                  <label class="govuk-label govuk-checkboxes__label" for="waste-2">
+                    People impact
+                  </label>
+                </div>
+                <div class="govuk-checkboxes__item">
+                  <input class="govuk-checkboxes__input" id="waste-3" name="waste" type="checkbox" value="farm">
+                  <label class="govuk-label govuk-checkboxes__label" for="waste-3">
+                    Health impact
+                  </label>
+                </div>
+              </div>
+            </fieldset>
+          </div>
+
+
+    <a style="margin-top: 10px; margin-left: 0px; float: left;" href="" role="button" class="govuk-button">Apply filters</a>
+    <div class="clear-filters">
+    <a href="">Clear filters</a>
+    </div>
+
+</div>
+
+<div class="govuk-grid-column-one-third">
+  <div class="filters">
+<div class="form-group" style="margin-top: 57px;">
+<label class="govuk-label" for="select-box" style="font-weight: bold;">Prevention or treatment</label>
+<select class="govuk-select" id="select-box" name="select-box" style="width: 80%; background-color: white;">
+<option>Prevention</option>
+<option>Treatment</option>
+</select>
+</div>
+</br>
+<div class="filters">
+<div class="form-group">
+<label class="govuk-label" for="sort" style="font-weight: bold;">Age group</label>
+<select class="govuk-select" id="sort" name="sort" style="width: 80%; background-color: white;">
+<option>Any</option>
+<option>0-10</option>
+<option>11-18</option>
+<option>19-29</option>
+<option>30-39</option>
+<option>40-49</option>
+<option>50-59</option>
+<option>60-69</option>
+<option>70+</option>
+</select>
+</div>
+</div>
+  </div>
+</div>
+
+        <div class="govuk-grid-column-one-third">
+          <div class="filters" style="margin-top: 57px;">
+            <div class="form-group">
+          <label class="govuk-label" for="sort-1" style="font-weight: bold;">Subject area</label>
+          <select class="govuk-select" id="sort-1" name="sort-1" style="width: 80%; background-color: white;">
+          <option>Alcohol treatment</option>
+          <option>Drug treatment</option>
+          <option>NHS health checks</option>
+          <option>Child obesity</option>
+          <option>Sexual health</option>
+          <option>Tobacco control</option>
+          <option>Air quality</option>
+          <option>Best start in life</option>
+          </select>
+          </div>
+          </br>
+          <div class="filters">
+          <div class="form-group">
+          <label class="govuk-label" for="sort" style="font-weight: bold;">Geographic area</label>
+          <select class="govuk-select" id="sort" name="sort" style="width: 80%; background-color: white;">
+          <option>Any</option>
+          <option>North</option>
+          <option>North East</option>
+          <option>North West</option>
+          <option>West Midlands</option>
+          <option>East Midlands</option>
+          <option>London</option>
+          <option>South East</option>
+          <option>South West</option>
+          </select>
+          </div>
+          </div>
+
+</form>
+  </div>
+        </div>
+
+
+</div>
+
+</div>
+
+
+</div>
+</div>
+
+
+
+
+
+
+</form>
+{% endblock %}

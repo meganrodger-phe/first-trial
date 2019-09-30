@@ -9,19 +9,39 @@ Digital Health Intelligence
 
 <form action="project-closed" method="get" class="form">
   <div class="govuk-grid-row">
+<!--This should be on every page within a project!-->
+<div class="project-bar">
+  <div class="govuk-grid-column-one-third">
+    <h2 class="govuk-heading-s" style="margin-bottom: 5px;">Rising drinking in underage</h2>
+    <a href="">Show project details</a>
+
+  </div>
+  <div class="govuk-grid-column-one-third">
+    <a href="view-selected-material-empty" style="font-size: 19px;">Project space</a>
+  </div>
+
+  <div class="govuk-grid-column-one-third">
+    <a href="view-selected-material-empty" style="font-size: 19px;">View shortlisted material</a>
+  </div>
+</div>
+<!--end of project bar!-->
+</div>
+  <div class="govuk-grid-row">
     <div class="govuk-grid-column-two-thirds">
+    </br>
 <a href="view-selected-material" class="govuk-back-link">Back</a>
-<span class="govuk-caption-m">alc-200119</span>
 <h1 class="govuk-heading-l">Close your project</h1>
 
-<p>Once you have done this your project will be archived, you will be able to view it and download from it but not edit or add anything to it</p>
+<p>Closed projects are archived; it will be searchable by the tags associated to it and you can choose who will be able to view the information in the project.
+</p>
+<p>You can reopen closed projects at any point as a new project with the option to refresh the data in it.</p>
 </br>
 <div class="govuk-form-group">
   <label class="govuk-label--m" for="more-detail">
-    Add a closing comment on the success of this suggestion (optional)</br>
+    Add a closing comment (optional)</br>
   </label>
   <span id="more-detail-hint" class="govuk-hint">
-    This can be about how the information landed with a particular decision maker or whether something was particularly successful
+    This can be about whether the information was effective, or insights into these type of projects
   </span>
   <textarea class="govuk-textarea" id="close_comment" name="close_comment" rows="5" aria-describedby="more-detail-hint"></textarea>
 </div>
@@ -31,24 +51,24 @@ Digital Health Intelligence
   <fieldset class="govuk-fieldset">
     <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
       <h2 class="govuk-heading-m">
-        Who would you like your project to be viewable to:
+        Who will be able to view this project:
       </h2>
     </legend>
     <div class="govuk-radios">
       <div class="govuk-radios__item">
         <input class="govuk-radios__input" id="where-do-you-live-1" name="where-do-you-live" type="radio" value="england">
         <label class="govuk-label govuk-radios__label" for="where-do-you-live-1">
-          <strong>Only people who have contributed to project</strong> - everyone else will be able to view project title, summary and team
+          <strong>Only people who have contributed to project</strong>
         </label> </div>
       <div class="govuk-radios__item">
         <input class="govuk-radios__input" id="where-do-you-live-2" name="where-do-you-live" type="radio" value="scotland">
         <label class="govuk-label govuk-radios__label" for="where-do-you-live-2">
-          <strong>People in your local authority</strong> - all people with a XXX ending email address would be able to view the project information saved to this area
+          <strong>People in your local authority</strong>
         </label> </div>
       <div class="govuk-radios__item">
         <input class="govuk-radios__input" id="where-do-you-live-3" name="where-do-you-live" type="radio" value="wales">
         <label class="govuk-label govuk-radios__label" for="where-do-you-live-3">
-          <strong>People in other local authorities</strong> - this means the project information would be viewable by all local government
+          <strong>Anyone</strong> - people would be able to view the project summary, tags and closing comment, and request to be able to view project contents
         </label> </div>
 
     </div>

@@ -1,0 +1,342 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+<form action="" method="get" class="form">
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-full">
+<a href="selected-profile" class="govuk-back-link">Back</a>
+
+<div class="govuk-breadcrumbs">
+  <ol class="govuk-breadcrumbs__list">
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="search-start-data-alt">Search data</a>
+    </li>
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="profile-or-indicator">Search indicators</a>
+    </li>
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="selected-profile">Cardiovascular disease</a>
+    </li>
+    <li class="govuk-breadcrumbs__list-item" aria-current="page">Profile view</li>
+  </ol>
+</div>
+
+<h1 class="govuk-heading-l">Cardiovascular disease</h1>
+
+<div class="filter-box">
+  <p class="govuk-body" style="margin-top: 20px;">View indicators by:</p>
+
+  <legend>
+  <h3 class="govuk-heading-s" style="margin-top: 0px; margin-bottom: 15px; ">Subdomain:</h3>
+  </legend>
+
+    <div class="govuk-form-group">
+            <fieldset class="govuk-fieldset" aria-describedby="waste-hint">
+              <div class="multiple-choice--hod">
+                <div class="hacked-check" >
+                <div class="govuk-checkboxes__item" >
+                  <input class="govuk-checkboxes__input" id="waste-1" name="waste" type="checkbox" value="carcasses" checked>
+                  <label class="govuk-label govuk-checkboxes__label" for="waste-1">
+                    Risk factors
+                  </label>
+                </div>
+              </div>
+              <div class="hacked-check" >
+                <div class="govuk-checkboxes__item">
+                  <input class="govuk-checkboxes__input" id="waste-2" name="waste" type="checkbox" value="mines">
+                  <label class="govuk-label govuk-checkboxes__label" for="waste-2">
+                    Diabetes
+                  </label>
+                </div>
+              </div>
+              <div class="hacked-check" >
+                <div class="govuk-checkboxes__item">
+                  <input class="govuk-checkboxes__input" id="waste-3" name="waste" type="checkbox" value="farm">
+                  <label class="govuk-label govuk-checkboxes__label" for="waste-3">
+                    Heart
+                  </label>
+                </div>
+              </div>
+              <div class="hacked-check" >
+                <div class="govuk-checkboxes__item">
+                  <input class="govuk-checkboxes__input" id="waste-3" name="waste" type="checkbox" value="farm">
+                  <label class="govuk-label govuk-checkboxes__label" for="waste-3">
+                    Kidney
+                  </label>
+                </div>
+              </div>
+              <div class="hacked-check">
+                <div class="govuk-checkboxes__item">
+                  <input class="govuk-checkboxes__input" id="waste-3" name="waste" type="checkbox" value="farm">
+                  <label class="govuk-label govuk-checkboxes__label" for="waste-3">
+                    Stoke
+                  </label>
+                </div>
+              </div>
+              </div>
+            </fieldset>
+          </div>
+<div class="govuk-grid-column-one-third">
+          <p>For area options:</p>
+
+        <div class="profile-filters">
+        <div class="govuk-form-group">
+        <label class="govuk-label" for="select-box" style="font-weight: bold;">Area type</label>
+        <select class="govuk-select" id="select-box" name="select-box" style="background-color: white; min-width: 250px;">
+        <option>CCG's (2017/18)</option>
+        <option>Ambulance</option>
+        <option>CCG's (2018/19)</option>
+        <option>County and UAs</option>
+        <option>GP</option>
+        <option>STP</option>
+        </select>
+        </div>
+        </br>
+      </div>
+
+</div>
+
+<div class="gov-uk-grid-column-two-thirds">
+        <div class="profile-filters">
+        <p style="clear: left;">Choose from areas available:</p>
+        <div class="govuk-form-group">
+        <label class="govuk-label" for="select-box" style="font-weight: bold;">Region</label>
+        <select class="govuk-select" id="select-box" name="select-box" style="background-color: white; min-width: 250px;">
+        <option>London</option>
+        <option>East of England</option>
+        <option>Midlands</option>
+        <option>North East</option>
+        </select>
+        </div>
+        </br>
+      </div>
+      <div class="profile-filters" style="margin-top: 35px;">
+      <div class="govuk-form-group">
+      <label class="govuk-label" for="select-box" style="font-weight: bold;">Areas</label>
+      <select class="govuk-select" id="select-box" name="select-box" style="background-color: white; min-width: 250px;">
+      <option>NHS Southwark CCG</option>
+      <option>NHS Sutton CCG</option>
+      <option>NHS Tower Hamlets CCG</option>
+      <option>NHS Walthom Forest CCG</option>
+      </select>
+      </div>
+      </br>
+    </div>
+    </div>
+
+
+<div class="filter-button" style="clear: left;" >
+<a href="" role="button" class="govuk-button">Apply filters</a>
+</div>
+</div>
+</br>
+
+
+<h3 class="govuk-heading-s">Key</h3>
+<div class="benchmark-key-g">
+  <p>good compared to benchmark</p>
+</div>
+<div class="benchmark-key-s">
+  <p>similar to benchmark</p>
+</div>
+<div class="benchmark-key-w">
+  <p>worse compared to benchmark</p>
+</div>
+
+</br>
+
+<div class="things-in-tabs" style="clear: left; margin-top: 60px;">
+<div class="govuk-tabs" data-module="tabs">
+  <h2 class="govuk-tabs__title">
+    Contents
+  </h2>
+
+  <ul class="govuk-tabs__list" style="min-width: 680px;">
+    <li class="govuk-tabs__list-item">
+      <a class="govuk-tabs__tab govuk-tabs__tab--selected" href="#past-day">
+        Indicators
+      </a>
+    </li>
+    <li class="govuk-tabs__list-item">
+      <a class="govuk-tabs__tab" href="#past-week">
+        Area profiles
+      </a>
+    </li>
+    <li class="govuk-tabs__list-item">
+      <a class="govuk-tabs__tab" href="#past-month">
+        Trends
+      </a>
+    </li>
+  </ul>
+
+  <section class="govuk-tabs__panel" id="past-day">
+    <div class="icon-table">
+    <table class="table-clickable govuk-table">
+      <thead class="govuk-table__head">
+        <tr class="govuk-table__row">
+          <th class="govuk-table__header multiple-choice--hod">
+            <div class="govuk-checkboxes__item">
+              <input type="checkbox" class="govuk-checkboxes__input jsCheckboxAll" id="radio-all">
+              <label class="govuk-label govuk-checkboxes__label" for="radio-all">
+                &nbsp;
+              </label>
+            </div>
+          </th>
+          <th class="govuk-table__header">Indicator</th>
+          <th class="govuk-table__header">Period</th>
+          <th class="govuk-table__header">England</th>
+          <th class="govuk-table__header" style="min-width: 120px;">NHS Halton CCG</th>
+          <th class="govuk-table__header"><a href="">add 10 most similar</a></th>
+          <th class="govuk-table__header"><a href="">choose a comparison</a></th>
+        </tr>
+      </thead>
+      <tbody class="govuk-table__body">
+
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell multiple-choice--hod">
+              <div class="govuk-checkboxes__item">
+                <input type="checkbox" class="govuk-checkboxes__input jsCheckbox" id="radio-1">
+                <label class="govuk-label govuk-checkboxes__label" for="radio-1">
+                  &nbsp;
+                </label>
+              </div>
+            </td>
+            <td class="govuk-table__cell table-icon"><p>HYP006: Blood pressure <= 150/90 mmHg in people with hypertension</p>
+            <a href=""><svg height='30px' width='30px'  fill="#000000" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" x="0px" y="0px"><title>032-Information</title><g data-name="032-Information"><path d="M16,1A15,15,0,1,0,31,16,15,15,0,0,0,16,1Zm0,28A13,13,0,1,1,29,16,13,13,0,0,1,16,29Z"></path><path d="M16,12a1,1,0,0,0-1,1V24a1,1,0,0,0,2,0V13A1,1,0,0,0,16,12Z"></path><circle cx="16" cy="9" r="1"></circle></g></svg></a>
+            </td>
+            <td class="govuk-table__cell">2017/18</td>
+            <td class="govuk-table__cell">79.1</td>
+            <div class="icon-table"><td class="govuk-table__cell"><p class="this">78.6</p></td>
+            <td class="govuk-table__cell"></td>
+            <td class="govuk-table__cell"></td>
+
+          </tr>
+
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell multiple-choice--hod">
+              <div class="govuk-checkboxes__item">
+                <input type="checkbox" class="govuk-checkboxes__input jsCheckbox" id="radio-2">
+                <label class="govuk-label govuk-checkboxes__label" for="radio-2">
+                  &nbsp;
+                </label>
+              </div>
+            </td>
+            <td class="govuk-table__cell"><p>Estimated smoking prevalence (QOF)</p><a href=""><svg height='30px' width='30px'  fill="#000000" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" x="0px" y="0px"><title>032-Information</title><g data-name="032-Information"><path d="M16,1A15,15,0,1,0,31,16,15,15,0,0,0,16,1Zm0,28A13,13,0,1,1,29,16,13,13,0,0,1,16,29Z"></path><path d="M16,12a1,1,0,0,0-1,1V24a1,1,0,0,0,2,0V13A1,1,0,0,0,16,12Z"></path><circle cx="16" cy="9" r="1"></circle></g></svg></a></td>
+            <td class="govuk-table__cell">2017/18</td>
+            <td class="govuk-table__cell">17.2</td>
+            <td class="govuk-table__cell"><p class="that">17.9</p></td>
+            <td class="govuk-table__cell"></td>
+            <td class="govuk-table__cell"></td>
+          </tr>
+
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell multiple-choice--hod">
+              <div class="govuk-checkboxes__item">
+                <input type="checkbox" class="govuk-checkboxes__input jsCheckbox" id="radio-3">
+                <label class="govuk-label govuk-checkboxes__label" for="radio-3">
+                  &nbsp;
+                </label>
+              </div>
+            </td>
+            <td class="govuk-table__cell"><p>CVD-PP001: new hypertension patients, age 30-74, with CV risk assessment >=20% treated w. statins (den.incl.exc.)</p><a href=""><svg height='30px' width='30px'  fill="#000000" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" x="0px" y="0px"><title>032-Information</title><g data-name="032-Information"><path d="M16,1A15,15,0,1,0,31,16,15,15,0,0,0,16,1Zm0,28A13,13,0,1,1,29,16,13,13,0,0,1,16,29Z"></path><path d="M16,12a1,1,0,0,0-1,1V24a1,1,0,0,0,2,0V13A1,1,0,0,0,16,12Z"></path><circle cx="16" cy="9" r="1"></circle></g></svg></a></td>
+            <td class="govuk-table__cell">2017/18</td>
+            <td class="govuk-table__cell">90.5</td>
+            <td class="govuk-table__cell"><p class="this">89.7</p></td>
+            <td class="govuk-table__cell"></td>
+            <td class="govuk-table__cell"></td>
+          </tr>
+
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell multiple-choice--hod">
+              <div class="govuk-checkboxes__item">
+                <input type="checkbox" class="govuk-checkboxes__input jsCheckbox" id="radio-4">
+                <label class="govuk-label govuk-checkboxes__label" for="radio-4">
+                  &nbsp;
+                </label>
+              </div>
+            </td>
+            <td class="govuk-table__cell"><p>BP002: Patients, aged 45+, who have a record of blood pressure (last 5yrs)</p><a href=""><svg height='30px' width='30px'  fill="#000000" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" x="0px" y="0px"><title>032-Information</title><g data-name="032-Information"><path d="M16,1A15,15,0,1,0,31,16,15,15,0,0,0,16,1Zm0,28A13,13,0,1,1,29,16,13,13,0,0,1,16,29Z"></path><path d="M16,12a1,1,0,0,0-1,1V24a1,1,0,0,0,2,0V13A1,1,0,0,0,16,12Z"></path><circle cx="16" cy="9" r="1"></circle></g></svg></a></td>
+            <td class="govuk-table__cell">2017/18</td>
+            <td class="govuk-table__cell">94.4</td>
+            <td class="govuk-table__cell"><p class="that">94.7</td>
+            <td class="govuk-table__cell"></td>
+            <td class="govuk-table__cell"></td>
+          </tr>
+
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell multiple-choice--hod">
+              <div class="govuk-checkboxes__item">
+                <input type="checkbox" class="govuk-checkboxes__input jsCheckbox" id="radio-5">
+                <label class="govuk-label govuk-checkboxes__label" for="radio-5">
+                  &nbsp;
+                </label>
+              </div>
+            </td>
+            <td class="govuk-table__cell"><p>SMOK002: status recorded in last 12 mths (certain conditions), den.incl.exc.</p><a href=""><svg height='30px' width='30px'  fill="#000000" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" x="0px" y="0px"><title>032-Information</title><g data-name="032-Information"><path d="M16,1A15,15,0,1,0,31,16,15,15,0,0,0,16,1Zm0,28A13,13,0,1,1,29,16,13,13,0,0,1,16,29Z"></path><path d="M16,12a1,1,0,0,0-1,1V24a1,1,0,0,0,2,0V13A1,1,0,0,0,16,12Z"></path><circle cx="16" cy="9" r="1"></circle></g></svg></a></td>
+            <td class="govuk-table__cell">2017/18</td>
+            <td class="govuk-table__cell">89.2</td>
+            <td class="govuk-table__cell"><p class="and">90.2</p></td>
+            <td class="govuk-table__cell"></td>
+            <td class="govuk-table__cell"></td>
+          </tr>
+
+
+
+      </tbody>
+    </table>
+  </div>
+  </section>
+
+  <section class="govuk-tabs__panel govuk-tabs__panel--hidden" id="past-week">
+
+  </section>
+  <section class="govuk-tabs__panel govuk-tabs__panel--hidden" id="past-month">
+
+  </section>
+  <section class="govuk-tabs__panel govuk-tabs__panel--hidden" id="past-year">
+
+  </section>
+</div>
+
+
+
+
+
+
+  </div>
+</div>
+
+<!--
+<p>
+You can search the area you're looking at or select a location on the map.
+</p>
+<div class="form-group">
+  <input type="text" class="govuk-input" id="searchTerm" name="searchTerm" style="width: 350px;" value="enter postcode, town or local authority">
+  <button class="govuk-button" type="submit" value="Search" name="" style="background-color:black; min-height: 36px; min-width: 36px"><span class="hod-search"></span>
+  <i class="fa fa-search" aria-hidden="true"></i>
+  </button>
+  </div>
+</br>
+<img src="/public/images/map-of-uk.png" style="">
+!-->
+
+
+
+
+</div>
+</div>
+
+
+</br>
+
+
+
+</form>
+{% endblock %}

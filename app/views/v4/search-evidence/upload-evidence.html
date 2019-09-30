@@ -1,0 +1,87 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+<form action="" method="get" class="form">
+
+  <div class="govuk-grid-row">
+    <!--This should be on every page within a project!-->
+
+    <div class="govuk-grid-row">
+    <div class="project-bar">
+      <div class="govuk-grid-column-two-thirds">
+        <h2 class="govuk-heading-s" style="margin-bottom: 5px; "><span style="font-weight: lighter;">Project:</span>Rise in underage deaths from alcohol</h2>
+        <a href="">Show project details</a>
+      </div>
+      <div class="govuk-grid-column-one-third">
+        <a href="view-selected-material-empty" style="font-size: 19px;">View shortlisted material</a>
+      </div>
+      </div>
+  </div>
+  <!--end of project bar!-->
+</div>
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+    </br>
+<a href="../project-space/project-space-progress" class="govuk-back-link">Back</a>
+<h1 class="govuk-heading-l">Upload grey literature or citizen engagement</h1>
+<p>You can upload links to documents kept in online resources. You will have to maintain links yourselves.</p>
+</br>
+<div class="govuk-form-group">
+  <h3 class="govuk-heading-s">Add a URL</h3>
+  <input class="govuk-input" id="event-name" name="event-name" type="text">
+</div>
+<div class="govuk-form-group">
+  <h3 class="govuk-heading-s">Type of evidence</h3>
+  <fieldset class="govuk-fieldset">
+    <div class="govuk-radios">
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="where-do-you-live" name="where-do-you-live" type="radio" value="england">
+        <label class="govuk-label govuk-radios__label" for="where-do-you-live">
+          Grey literature
+        </label>
+      </div>
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="where-do-you-live-2" name="where-do-you-live" type="radio" value="scotland">
+        <label class="govuk-label govuk-radios__label" for="where-do-you-live-2">
+          Citizen engagement
+        </label>
+      </div>
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="where-do-you-live-3" name="where-do-you-live" type="radio" value="wales">
+        <label class="govuk-label govuk-radios__label" for="where-do-you-live-3">
+          Other
+        </label>
+      </div>
+    </div>
+  </fieldset>
+</div>
+<div class="govuk-form-group">
+  <h3 class="govuk-heading-s">Add a summary for this piece of evidence</h3>
+  <input class="govuk-input" id="event-name" name="event-name" type="text">
+</div>
+<div class="govuk-form-group">
+  <h3 class="govuk-heading-s" style="margin-bottom: 0px;">Add tags to this piece of evidence to make it findable</h3>
+  <span id="passport-issued-hint" class="govuk-hint">
+     You can search by these when looking for this type of evidence
+   </span>
+  <input class="govuk-input" id="event-name" name="event-name" type="text">
+</div>
+<button class="govuk-button" data-module="govuk-button">
+  Upload to project
+</button>
+
+
+
+</div>
+</div>
+
+
+
+</form>
+{% endblock %}

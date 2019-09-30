@@ -1,0 +1,62 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+<form action="" method="get" class="form">
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-full">
+<a href="../sign-in" class="govuk-back-link">Back</a>
+<h1 class="govuk-heading-l">Search for data or evidence</h1>
+</div>
+</div>
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-one-half">
+    <div class="data-evidence-menu">
+    <h2 class="govuk-heading-s">Search for population health and service data</h2>
+    <p>Search through data that Public Health England holds either by profiles and indicators, or by searching from a map and creating a bespoke area</p>
+    <div class="block-space">
+  		  <a class="govuk-button button-white" type="submit" href="search-start-data-alt" style="color: black;">Start searching data</a>
+  	</div>
+  </div>
+  </div>
+  <div class="govuk-grid-column-one-half">
+    <div class="data-evidence-menu">
+    <h2 class="govuk-heading-s">Search for evidence</h2>
+    <p>Search through quality assured reports, guidance, papers that Public Health England and Cochrane provides, as well as accumulated grey literature from Local Authorities</p>
+  <a class="govuk-button button-white" type="submit" href="search-start-best-practice-start" style="color: black;">Start searching evidence</a>
+  </div>
+  </div>
+
+<!--
+<p>
+You can search the area you're looking at or select a location on the map.
+</p>
+<div class="form-group">
+  <input type="text" class="govuk-input" id="searchTerm" name="searchTerm" style="width: 350px;" value="enter postcode, town or local authority">
+  <button class="govuk-button" type="submit" value="Search" name="" style="background-color:black; min-height: 36px; min-width: 36px"><span class="hod-search"></span>
+  <i class="fa fa-search" aria-hidden="true"></i>
+  </button>
+  </div>
+</br>
+<img src="/public/images/map-of-uk.png" style="">
+!-->
+
+
+
+
+</div>
+</div>
+
+
+</br>
+
+
+
+</form>
+{% endblock %}

@@ -1,0 +1,86 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+<form action="" method="get" class="form">
+
+
+<div class="govuk-grid-row">
+<div class="govuk-grid-column-two-thirds">
+<a href="area-selected-options" class="govuk-back-link">Back</a>
+<h2 class="govuk-heading-m">Report for selected area:</h2>
+<p style="font-size: 16px;">MSOA 2011:Oxford 003 (E09372892)</br>
+MSOA 2011:Oxford 002 (E09372892)
+</p>
+<a href="">download</a><a href="" style="margin-left: 20px;">export</a>
+</br></br>
+
+<div class="form-group" style="margin-bottom: 20px;">
+<label class="govuk-label" for="sort" style="font-weight: bold;">Area of report:</label>
+<select class="govuk-select" id="sort" name="sort" style="width: 50%; background-color: white;">
+<option>Population</option>
+<option>Cardiovascular</option>
+<option>all</option>
+<option>the</option>
+<option>profiles</option>
+<option>here</option>
+<option>.</option>
+<option>.</option>
+<option>.</option>
+</select>
+</div>
+
+</div>
+
+<div class="govuk-grid-column-one-third">
+<div class="map-image" style="width: 300px; height: 200px; margin-top: 50px; overflow: hidden;">
+<img src="../../public/images/map-first.png">
+</div>
+</div>
+</div>
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-full">
+
+
+<hr>
+
+<h1 class="govuk-heading-s">Population</h1>
+<p>Reports in downloadable formats in accessible html</p>
+
+</div>
+
+</div>
+
+
+<!--
+<p>
+You can search the area you're looking at or select a location on the map.
+</p>
+<div class="form-group">
+  <input type="text" class="govuk-input" id="searchTerm" name="searchTerm" style="width: 350px;" value="enter postcode, town or local authority">
+  <button class="govuk-button" type="submit" value="Search" name="" style="background-color:black; min-height: 36px; min-width: 36px"><span class="hod-search"></span>
+  <i class="fa fa-search" aria-hidden="true"></i>
+  </button>
+  </div>
+</br>
+<img src="/public/images/map-of-uk.png" style="">
+!-->
+
+
+
+
+</div>
+</div>
+
+
+</br>
+
+
+
+</form>
+{% endblock %}

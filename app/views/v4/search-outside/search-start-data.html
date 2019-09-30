@@ -7,7 +7,7 @@
 
 {% block content %}
 
-<form action="choose-area-map-result" method="get" class="form">
+<form action="" method="get" class="form">
   <div class="govuk-grid-row">
     <div class="project-bar">
     <div class="govuk-grid-column-two-thirds">
@@ -26,46 +26,39 @@
 </div>
 </div>
 </div>
-
   <div class="govuk-grid-row">
+    <div class="govuk-grid-column-full">
+<a href="../team/project-space-progress" class="govuk-back-link">Back</a>
+<h1 class="govuk-heading-l">Search for data to add to your project</h1>
+</div>
+</div>
+<div class="govuk-grid-row">
   <div class="govuk-grid-column-one-third">
-<a href="search-start-data-alt" class="govuk-back-link">Back</a>
-<h1 class="govuk-heading-m">Search for data by area</h1>
-<p>Select an area from the map or choose an area</p>
-
-<div class="govuk-form-group">
-  <label class="govuk-label" for="width-20">
-    Find an area
-  </label>
-  <input class="govuk-input govuk-input--width-20" id="width-20" name="width-20" type="text">
-</div>
-<div class="form-group">
-<label class="govuk-label" for="sort">Type of area</label>
-<select class="govuk-select" id="sort" name="sort";>
-<option>Choose an area</option>
-<option>CCG</option>
-<option>STP</option>
-<option>Local Authorities</option>
-<option>area</option>
-<option>type </option>
-<option>options</option>
-<option>.</option>
-<option>.</option>
-</select>
-</div>
-</br>
-<button class="govuk-button" data-module="govuk-button">
-  Select for area
-</button>
-
-
-  </div>
-  <div class="govuk-grid-column-two-thirds">
-    <div class="map-image" style="width=100%; height: auto; overflow: hidden;">
-    <img src="../../public/images/zoom-out-02.png">
+    <div class="data-menu">
+    <h2 class="govuk-heading-s">Search on a map</h2>
+    <p>Create a selected area from LSOA level upwards, to see data and indicators available</p>
+      <img src="/public/images/data-menu-three.png" style="max-width: 260px; padding-bottom:10px;">
+    <a href="" style="font-size: 18px;">Search data from a map</a>
   </div>
   </div>
-</div>
+  <div class="govuk-grid-column-one-third">
+    <div class="data-menu">
+    <h2 class="govuk-heading-s">Search by topic or indicator</h2>
+    <p>Data by subject area, geographical area and service performance</p>
+
+    <img src="/public/images/data-menu-one.png" style="max-width: 260px; padding-bottom:10px;">
+    <a href="" style="font-size: 18px;">Search data by topic</a>
+  </div>
+  </div>
+  <div class="govuk-grid-column-one-third">
+    <div class="data-menu">
+    <h2 class="govuk-heading-s">Search service performance data indicators</h2>
+    <p>Perfomance data of services in your area</p>
+        <img src="/public/images/data-menu-two.png" style="max-width: 260px; padding-bottom:10px;">
+
+    <a href="" style="font-size: 18px;">View service performance data</a>
+  </div>
+  </div>
 
 <!--
 <p>

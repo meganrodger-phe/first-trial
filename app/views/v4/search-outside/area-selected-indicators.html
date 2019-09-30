@@ -1,0 +1,102 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+<form action="" method="get" class="form">
+
+
+<div class="govuk-grid-row">
+<div class="govuk-grid-column-one-half">
+<h2 class="govuk-heading-s">Area selected:</h2>
+<p style="font-size: 16px;">MSOA 2011:Oxford 003 (E09372892)</br>
+MSOA 2011:Oxford 002 (E09372892)
+</p>
+<a href="">Change</a>
+<a href="" style="float: right;">Hide</a>
+<hr>
+<a href="area-selected-options" class="govuk-back-link">Back</a>
+</br>
+<h1 class="govuk-heading-s" style="float: left;">Indicators</h1>
+<a class="govuk-button button-secondary" type="submit" href="selected-profile" style="color: black; float: right;">Export all data</a>
+<h3 class="govuk-heading-s" style="clear: right; float: left;">Profiles available</h3>
+<p style="float: right;">Sort by:</p>
+<table class="govuk-table" style="background: #F7F7F7;">
+  <thead class="govuk-table__head">
+    <tr class="govuk-table__row">
+    </tr>
+  </thead>
+  <tbody class="govuk-table__body">
+    <tr class="govuk-table__row">
+    <td class="govuk-table__cell" style="padding: 10px;"><a href="area-selected-indicators-subdomain">AMR local indicators</a></td>
+    </tr>
+    <tr class="govuk-table__row">
+    <td class="govuk-table__cell" style="padding: 10px;"><a href="area-selected-indicators-subdomain">Atlas of variation</a></td>
+    </tr>
+    <tr class="govuk-table__row">
+      <td class="govuk-table__cell" style="padding: 10px;"><a href="area-selected-indicators-subdomain">Cancer services</a></td>
+    </tr>
+    <tr class="govuk-table__row">
+      <td class="govuk-table__cell" style="padding: 10px;"><a href="area-selected-indicators-subdomain">Cardiovascular disease</a></td>
+    </tr>
+    <tr class="govuk-table__row">
+      <td class="govuk-table__cell" style="padding: 10px;"><a href="area-selected-indicators-subdomain">Cardiovascular disease primary care intelligence</a></td>
+    </tr>
+    <tr class="govuk-table__row">
+      <td class="govuk-table__cell" style="padding: 10px;"><a href="area-selected-indicators-subdomain">Cardiovascular disease, diabetes and kidney disease</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 class="govuk-heading-s">Or search for an indicator</h2>
+<div class="govuk-form-group">
+  <label class="govuk-label" for="width-20">
+    Search by key term:
+  </label>
+  <input class="govuk-input govuk-input--width-20" id="width-20" name="width-20" type="text">
+</div>
+<a class="govuk-button button-secondary" type="submit" href="selected-profile" style="color: black;">Continue</a>
+
+
+</div>
+<div class="govuk-grid-column-one-half">
+  <div class="map-image" style="width=100%; height: auto; overflow: hidden;">
+  <img src="../../public/images/map-first.png">
+</div>
+</div>
+</div>
+
+  </div>
+</div>
+
+<!--
+<p>
+You can search the area you're looking at or select a location on the map.
+</p>
+<div class="form-group">
+  <input type="text" class="govuk-input" id="searchTerm" name="searchTerm" style="width: 350px;" value="enter postcode, town or local authority">
+  <button class="govuk-button" type="submit" value="Search" name="" style="background-color:black; min-height: 36px; min-width: 36px"><span class="hod-search"></span>
+  <i class="fa fa-search" aria-hidden="true"></i>
+  </button>
+  </div>
+</br>
+<img src="/public/images/map-of-uk.png" style="">
+!-->
+
+
+
+
+</div>
+</div>
+
+
+</br>
+
+
+
+</form>
+{% endblock %}

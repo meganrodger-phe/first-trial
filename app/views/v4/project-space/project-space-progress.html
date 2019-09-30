@@ -8,31 +8,30 @@ Digital Health Intelligence
 {% block content %}
 
 <form action="" method="get" class="form">
-    <div class="govuk-grid-row">
+
+      <!--This should be on every page within a project!-->
+
+          <div class="govuk-grid-row">
       <div class="project-bar">
-      <div class="govuk-grid-column-two-thirds">
-    <h2 class="govuk-heading-s">{{ identifier }}</h2>
-    <div class="unfold-summary" style="background-color: #005EA5;">
-    <details class="govuk-details" style="color: white; font-size: 16px;">
-  <div class="govuk-details__text">
-    {{ project_detail }}
-  </div>
-</details>
-</div>
-</div>
-<div class="govuk-grid-column-one-third">
-<h3 class="govuk-heading-s">Shortlisted information:</h3>
-<a href="../shortlisted-information/view-selected-material">View shortlisted material here</a>
-</div>
-</div>
-</div>
+        <div class="govuk-grid-column-two-thirds">
+          <h2 class="govuk-heading-s" style="margin-bottom: 5px;">Rising drinking in underage</h2>
+          <a href="">Show project details</a>
+
+        </div>
+        <div class="govuk-grid-column-one-third">
+          <a href="view-selected-material-empty" style="font-size: 19px;">View shortlisted material</a>
+        </div>
+        </div>
+    </div>
+    <!--end of project bar!-->
+
 
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-two-thirds">
       <div class="govuk-breadcrumbs">
         <ol class="govuk-breadcrumbs__list">
           <li class="govuk-breadcrumbs__list-item">
-            <a class="govuk-breadcrumbs__link" href="project-index">All projects</a>
+            <a class="govuk-breadcrumbs__link" href="../project-index">All projects</a>
           </li>
           <li class="govuk-breadcrumbs__list-item">
             <a class="govuk-breadcrumbs__link" aria-current="page">Project space</a>
@@ -41,10 +40,14 @@ Digital Health Intelligence
       </div>
 <a href="../project-index" class="govuk-back-link">Back</a>
 
-<h1 class="govuk-heading-l" style="margin-bottom: 0px;">{{ identifier }}</h1>
+<h1 class="govuk-heading-l" style="margin-bottom: 0px;">Rising drinking in underage</h1>
 <p class="under-heading">Project space</p>
-<!--maybe test whether they need more information!-->
 </br>
+<p>
+
+This is your area to bring together data and evidence that is relevant to your project.</p>
+<p>You can view information that has been saved to this project space, or shortlist anything saved in this space to take forward</p>
+<!--maybe test whether they need more information!-->
 </br>
 <div class="type-information">
   <h3 class="govuk-heading-s">How are we doing?</h3>
@@ -56,11 +59,9 @@ Digital Health Intelligence
   <h3 class="govuk-heading-s">What should we do?</h3>
   <p>View academic papers, articles, grey literature and health economic tools</p>
  <!---- something about where this information is taken from and located ---->
-  <a href="what-should">View information added</a><a href="../search-evidence/search-start-best-practice-start">Search for information to add</a><a href="" style="float: left; margin-left: 0px;">Upload evidence</a>
+  <a href="what-should">View information added</a><a href="../search-evidence/search-start-best-practice-start">Search for information to add</a><a href="../search-evidence/upload-evidence" style="float: left; margin-left: 0px;">Upload evidence</a>
 </div>
 
-
-<!---- would 'upload' not be its own grey box? ---->
 </div>
 
 </div>

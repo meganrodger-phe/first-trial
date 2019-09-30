@@ -1,0 +1,95 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+<form action="" method="get" class="form">
+
+<div class="govuk-grid-row">
+<div class="govuk-grid-column-one-half">
+<h2 class="govuk-heading-s">Area selected:</h2>
+<p style="font-size: 16px;">MSOA 2011:Oxford 003 (E09372892)</br>
+MSOA 2011:Oxford 002 (E09372892)
+</p>
+<a href="">Change</a>
+<a href="" style="float: right;">Hide</a>
+<hr>
+<a href="area-selected-options" class="govuk-back-link">Back</a>
+</br>
+<div class="titles" style="float: left;">
+<p style="margin-bottom: 0px;">Indicators</p>
+<h1 class="govuk-heading-s" style="margin-top: 0px;">Local alcohol profiles for england</h1>
+</div>
+<a class="govuk-button button-secondary" type="submit" href="selected-profile" style="color: black; float: right;">Export all data</a>
+<h3 class="govuk-heading-s" style="clear: right; float: left;">Domains with indicators for this area:</h3>
+<p style="float: right;">Sort by:</p>
+<table class="govuk-table" style="background: #F7F7F7;">
+  <thead class="govuk-table__head">
+    <tr class="govuk-table__row">
+    </tr>
+  </thead>
+  <tbody class="govuk-table__body">
+    <tr class="govuk-table__row">
+    <td class="govuk-table__cell" style="padding: 10px;"><a href="area-selected-indicators-showing">Key Indicators</a></td>
+    </tr>
+    <tr class="govuk-table__row">
+    <td class="govuk-table__cell" style="padding: 10px;"><a href="area-selected-indicators-showing">Mortality</a></td>
+    </tr>
+    <tr class="govuk-table__row">
+      <td class="govuk-table__cell" style="padding: 10px;"><a href="area-selected-indicators-showing">Hospital admissions</a></td>
+    </tr>
+    <tr class="govuk-table__row">
+      <td class="govuk-table__cell" style="padding: 10px;"><a href="area-selected-indicators-showing">Hospital admissions by age group</a></td>
+    </tr>
+    <tr class="govuk-table__row">
+      <td class="govuk-table__cell" style="padding: 10px;"><a href="area-selected-indicators-showing">Alcohol related conditions</a></td>
+    </tr>
+    <tr class="govuk-table__row">
+      <td class="govuk-table__cell" style="padding: 10px;"><a href="area-selected-indicators-showing">Other impacts</a></td>
+    </tr>
+  </tbody>
+</table>
+
+
+</div>
+<div class="govuk-grid-column-one-half">
+  <div class="map-image" style="width=100%; height: auto; overflow: hidden;">
+  <img src="../../public/images/map-first.png">
+</div>
+</div>
+</div>
+
+  </div>
+</div>
+
+<!--
+<p>
+You can search the area you're looking at or select a location on the map.
+</p>
+<div class="form-group">
+  <input type="text" class="govuk-input" id="searchTerm" name="searchTerm" style="width: 350px;" value="enter postcode, town or local authority">
+  <button class="govuk-button" type="submit" value="Search" name="" style="background-color:black; min-height: 36px; min-width: 36px"><span class="hod-search"></span>
+  <i class="fa fa-search" aria-hidden="true"></i>
+  </button>
+  </div>
+</br>
+<img src="/public/images/map-of-uk.png" style="">
+!-->
+
+
+
+
+</div>
+</div>
+
+
+</br>
+
+
+
+</form>
+{% endblock %}

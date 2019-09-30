@@ -1,0 +1,105 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+<form action="sub-profile-view" method="get" class="form">
+
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+<a href="profile-or-indicator" class="govuk-back-link">Back</a>
+
+<div class="govuk-breadcrumbs">
+  <ol class="govuk-breadcrumbs__list">
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="profile-or-indicator">Search data</a>
+    </li>
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="profile-or-indicator">Search profile or indicators</a>
+    </li>
+    <li class="govuk-breadcrumbs__list-item" aria-current="page">Cardiovascular disease</li>
+  </ol>
+</div>
+
+<h1 class="govuk-heading-l">Cardiovascular disease</h1>
+<div class="form-group">
+<label class="govuk-label" for="sort" style="font-weight: bold;">Choose a subdomain</label>
+<select class="govuk-select" id="sort" name="sort" style="width: 50%; background-color: white;">
+<option>Choose a subdomain</option>
+<option>Risk factors</option>
+<option>all</option>
+<option>the</option>
+<option>subdomains</option>
+<option>here</option>
+<option>.</option>
+<option>.</option>
+<option>.</option>
+</select>
+</div>
+</br>
+
+<button class="govuk-button" data-module="govuk-button">
+  Load indicators
+</button>
+</br>
+<a href="" style="font-size: 19px;">Download all data in this profile as a csv</a></br></br></br>
+
+<h2 class="govuk-heading-m">Information about the profile</h2>
+<p>This tool presents an overview of data on cardiovascular and cardiovascular related conditions of heart disease, stroke, diabetes and kidney disease. The profiles are for commissioners and health professionals when assessing the impact of cardiovascular disease on their local population and making decisions about services. They include data on mortality, hospital admissions, procedures and disease management.</p>
+
+<p>Narrative profile reports are available for each clinical commissioning group (CCG) in England.</p>
+
+<p>The profiles are created and maintained by the National Cardiovascular Intelligence Network (NCVIN).</p>
+
+<h3 class="govuk-heading-s">Other CVD data and intelligence resources</h3>
+<p>Cardiovascular disease primary care intelligence packs</p>
+
+<p>NCVIN collates and produces other intelligence resources to help health professionals to make or influence decisions about local services. These resources can be found here.</p>
+
+<h2 class="govuk-heading-m">Recent updates</h2>
+<p><strong>May 2019</strong></br>
+Stroke data for patients with AF from the Sentinel Stroke National Audit Programme updated to 2017/18.</p>
+
+<p><strong>Jan 2019</strong></br>
+
+<p>New data: Hospital admission data for heart disease and stroke updated to 2017/18 (this will vary by geography).
+
+Treatment care and services provision data from the National Diabetes Audit updated to 2017/18 for diabetes.</p>
+
+<p><strong>December 2018</strong></br>
+New data from the 2017/18 Quality Outcomes Framework has been included all profiles. Mortality data in heart disease and stroke updated to 2017. Treatment care and services provision data updated for stroke and kidney disease.</p>
+  </div>
+</div>
+
+<!--
+<p>
+You can search the area you're looking at or select a location on the map.
+</p>
+<div class="form-group">
+  <input type="text" class="govuk-input" id="searchTerm" name="searchTerm" style="width: 350px;" value="enter postcode, town or local authority">
+  <button class="govuk-button" type="submit" value="Search" name="" style="background-color:black; min-height: 36px; min-width: 36px"><span class="hod-search"></span>
+  <i class="fa fa-search" aria-hidden="true"></i>
+  </button>
+  </div>
+</br>
+<img src="/public/images/map-of-uk.png" style="">
+!-->
+
+
+
+
+</div>
+</div>
+
+
+</br>
+
+
+
+</form>
+{% endblock %}
