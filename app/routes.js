@@ -325,3 +325,152 @@ res.render('v3/team/project-space-progress', {
 
 })
 });
+
+
+
+//Version 4 of the Prototype
+
+router.get('/v4/new-project/create-identifier', function (req, res) {
+for (var a in req.query) req.session[a] = req.query[a];
+res.render('v4/new-project/create-identifier');
+});
+
+
+router.get('/v4/new-project/add-instructions', function (req, res) {
+for (var a in req.query) req.session[a] = req.query[a];
+res.render('v4/new-project/add-instructions', {
+
+  'identifier' : req.session.identifier,
+})
+});
+
+
+router.get('/v4/new-project/check-create-identifier', function (req, res) {
+for (var a in req.query) req.session[a] = req.query[a];
+res.render('v4/new-project/check-create-identifier', {
+
+'identifier' : req.session.identifier,
+'project_detail' : req.session.project_detail,
+'group_name' : req.session.group_name,
+'instructions' : req.session.instructions,
+'project_rationale' : req.session.project_rationale,
+'project_tag' : req.session.project_tag,
+
+})
+});
+
+router.get('/v4/new-project/project-created', function (req, res) {
+for (var a in req.query) req.session[a] = req.query[a];
+res.render('v4/new-project/project-created', {
+
+'identifier' : req.session.identifier,
+'group_name' : req.session.group_name,
+
+})
+});
+
+router.get('/v4/new-project/add-to-team', function (req, res) {
+for (var a in req.query) req.session[a] = req.query[a];
+res.render('v4/new-project/add-to-team', {
+
+'team_name' : req.session.team_name,
+
+})
+});
+
+router.get('/v4/new-project/add-to-team-add-one', function (req, res) {
+for (var a in req.query) req.session[a] = req.query[a];
+res.render('v4/new-project/add-to-team-add-one', {
+
+'team_name' : req.session.team_name,
+'member_one' : req.session.member_one,
+
+})
+});
+
+router.get('/v4/new-project/add-to-team-add-another', function (req, res) {
+for (var a in req.query) req.session[a] = req.query[a];
+res.render('v4/new-project/add-to-team-add-another', {
+
+'team_name' : req.session.team_name,
+'member_one' : req.session.member_one,
+'team_member_two' : req.session.team_member_two,
+
+})
+});
+
+router.get('/v4/new-project/team_created', function (req, res) {
+for (var a in req.query) req.session[a] = req.query[a];
+res.render('v4/new-project/team_created', {
+
+'team_name' : req.session.team_name,
+'member_one' : req.session.member_one,
+'team_member_two' : req.session.team_member_two,
+'identifier' : req.session.identifier,
+
+})
+});
+
+router.get('/v4/project-space/project-space-start', function (req, res) {
+for (var a in req.query) req.session[a] = req.query[a];
+res.render('v4/project-space/project-space-start', {
+
+'identifier' : req.session.identifier,
+'project_detail' : req.session.project_detail,
+'group_name' : req.session.group_name,
+
+})
+});
+
+router.get('/v4/project-space/view-selected-material-empty', function (req, res) {
+for (var a in req.query) req.session[a] = req.query[a];
+res.render('v4/project-space/view-selected-material-empty', {
+
+'identifier' : req.session.identifier,
+'project_detail' : req.session.project_detail,
+
+})
+});
+
+router.get('/v4/new-project/choose-team', function (req, res) {
+for (var a in req.query) req.session[a] = req.query[a];
+res.render('v4/new-project/choose-team', {
+
+'identifier' : req.session.identifier,
+
+})
+});
+
+router.get('/v4/shortlisted-information/close-project', function (req, res) {
+for (var a in req.query) req.session[a] = req.query[a];
+res.render('v4/shortlisted-information/close-project');
+});
+
+router.get('/v4/shortlisted-information/project-closed', function (req, res) {
+for (var a in req.query) req.session[a] = req.query[a];
+res.render('v4/shortlisted-information/project-closed', {
+
+'close_comment' : req.session.close_comment,
+
+})
+});
+
+router.get('/v4/project-index-project-added', function (req, res) {
+for (var a in req.query) req.session[a] = req.query[a];
+res.render('v4/project-index-project-added', {
+
+'identifier' : req.session.identifier,
+'project_detail' : req.session.project_detail,
+
+})
+});
+
+router.get('/v4/project-space/project-space-progress', function (req, res) {
+for (var a in req.query) req.session[a] = req.query[a];
+res.render('v4/project-space/project-space-progress', {
+
+'identifier' : req.session.identifier,
+'project_detail' : req.session.project_detail,
+
+})
+});
