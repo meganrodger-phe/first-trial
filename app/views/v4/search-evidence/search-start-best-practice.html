@@ -38,41 +38,25 @@ Digital Health Intelligence
 <div class="filter-box">
   <div class="govuk-grid-row">
       <div class="govuk-grid-column-one-third">
-        <h3 class="govuk-heading-s" style="padding-bottom: 8px; padding-top: 15px;">
-
-        </h3>
-
-          <legend>
-            <h3 class="govuk-heading-s" style="margin-top: 0px; margin-bottom: 20px; ">Good for...</h3>
-          </legend>
-
-          <div class="govuk-form-group">
-            <fieldset class="govuk-fieldset" aria-describedby="waste-hint">
-              <div class="multiple-choice--hod">
-                <div class="govuk-checkboxes__item">
-                  <input class="govuk-checkboxes__input" id="waste-1" name="waste" type="checkbox" value="carcasses">
-                  <label class="govuk-label govuk-checkboxes__label" for="waste-1">
-                    Financial impact
-                  </label>
-                </div>
-                <div class="govuk-checkboxes__item">
-                  <input class="govuk-checkboxes__input" id="waste-2" name="waste" type="checkbox" value="mines">
-                  <label class="govuk-label govuk-checkboxes__label" for="waste-2">
-                    People impact
-                  </label>
-                </div>
-                <div class="govuk-checkboxes__item">
-                  <input class="govuk-checkboxes__input" id="waste-3" name="waste" type="checkbox" value="farm">
-                  <label class="govuk-label govuk-checkboxes__label" for="waste-3">
-                    Health impact
-                  </label>
-                </div>
-              </div>
-            </fieldset>
-          </div>
-
-
-    <a style="margin-top: 10px; margin-left: 0px; float: left;" href="" role="button" class="govuk-button">Apply filters</a>
+        <div class="filters">
+      <div class="form-group" style="margin-top: 57px;">
+      <label class="govuk-label" for="select-box" style="font-weight: bold;">Age group</label>
+      <select class="govuk-select" id="select-box" name="select-box" style="width: 80%; background-color: white;">
+      <option>Under 18</option>
+      </select>
+      </div>
+      </br>
+      <div class="filters">
+      <div class="form-group">
+      <label class="govuk-label" for="sort" style="font-weight: bold;">Wider determinants of health</label>
+      <select class="govuk-select" id="sort" name="sort" style="width: 80%; background-color: white;">
+      <option>Select one</option>
+      </select>
+      </div>
+      </div>
+        </div>
+</br>
+    <a style="margin-top: 10px; margin-left: 0px; float: left;" href="evidence-search-results" role="button" class="govuk-button">Apply filters</a>
     <div class="clear-filters">
     <a href="">Clear filters</a>
     </div>
@@ -81,29 +65,13 @@ Digital Health Intelligence
 <div class="govuk-grid-column-one-third">
   <div class="filters">
 <div class="form-group" style="margin-top: 57px;">
-<label class="govuk-label" for="select-box" style="font-weight: bold;">Prevention or treatment</label>
+<label class="govuk-label" for="select-box" style="font-weight: bold;">Geographic region</label>
 <select class="govuk-select" id="select-box" name="select-box" style="width: 80%; background-color: white;">
-<option>Prevention</option>
-<option>Treatment</option>
+<option>Midlands</option>
 </select>
 </div>
 </br>
-<div class="filters">
-<div class="form-group">
-<label class="govuk-label" for="sort" style="font-weight: bold;">Age group</label>
-<select class="govuk-select" id="sort" name="sort" style="width: 80%; background-color: white;">
-<option>Any</option>
-<option>0-10</option>
-<option>11-18</option>
-<option>19-29</option>
-<option>30-39</option>
-<option>40-49</option>
-<option>50-59</option>
-<option>60-69</option>
-<option>70+</option>
-</select>
-</div>
-</div>
+<input class="govuk-button button-white" type="submit" value="choose an additional filter" style="margin-top: 30px;">
   </div>
 </div>
 
@@ -112,7 +80,7 @@ Digital Health Intelligence
   <div class="form-group">
 <label class="govuk-label" for="sort-1" style="font-weight: bold;">Subject area</label>
 <select class="govuk-select" id="sort-1" name="sort-1" style="width: 80%; background-color: white;">
-<option>Alcohol treatment</option>
+<option>Alcohol </option>
 <option>Drug treatment</option>
 <option>NHS health checks</option>
 <option>Child obesity</option>
@@ -122,35 +90,9 @@ Digital Health Intelligence
 <option>Best start in life</option>
 </select>
 </div>
-</br>
-<div class="filters">
-<div class="form-group">
-<label class="govuk-label" for="sort" style="font-weight: bold;">Geographic area</label>
-<select class="govuk-select" id="sort" name="sort" style="width: 80%; background-color: white;">
-<option>Any</option>
-<option>North</option>
-<option>North East</option>
-<option>North West</option>
-<option>West Midlands</option>
-<option>East Midlands</option>
-<option>London</option>
-<option>South East</option>
-<option>South West</option>
-</select>
-</div>
-</div>
+
 
 </form>
-  </div>
-        </div>
-
-
-</div>
-
-</div>
-
-</div>
-</div>
 
 
 
