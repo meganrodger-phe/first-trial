@@ -635,3 +635,12 @@ $selected-colour: #FFECC7;
 		background-color: #FFF;
 	}
 }
+
+.message-banner {
+  background-color: red;
+  padding: 10px 5px 3px 20px;
+  margin-bottom: 30px;
+  p {
+    color: white;
+  }
+}
